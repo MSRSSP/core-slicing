@@ -19,11 +19,9 @@ jobs:
       - name: checkout submodules
         shell: bash
         run: |
-          git config --file .gitmodules --get-regexp url | while read url; do
-            git config --file=.gitmodules $(echo "$url" | sed -E "s/git@github.com:|https:\/\/github.com\//https:\/\/${{ secrets.TOKEN }}:${{ secrets.TOKEN }}@github.com\//")
-          done
-          git submodule sync
-          git submodule update --init --depth=1
+          git -c url."https://${{ secrets.TOKEN }}@github.com".insteadOf="https://github.com" submodule update --init
+          git -c url."https://${{ secrets.TOKEN }}@github.com".insteadOf="https://github.com" submodule update --init --recursive slice-boot
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
