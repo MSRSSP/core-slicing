@@ -8,12 +8,11 @@ RUN apt clean
 RUN apt update && apt install -y git ninja-build
 FROM env AS toolchain
 RUN apt update && apt install -y git && apt clean
-RUN git clone --recursive https://github.com/riscv/riscv-gnu-toolchain
+RUN git clone https://github.com/riscv/riscv-gnu-toolchain
 RUN apt install -y texinfo
 FROM toolchain AS toolchain-build
 WORKDIR /riscv-gnu-toolchain
 RUN ./configure --prefix=/opt/riscv && make linux -j `nproc`
-
 FROM env AS qemu
 COPY .git /slice/.git
 COPY qemu /slice/qemu
