@@ -14,23 +14,25 @@ FROM toolchain AS toolchain-build
 WORKDIR /riscv-gnu-toolchain
 RUN ./configure --prefix=/opt/riscv && make linux -j `nproc`
 
-FROM env AS qemu-env
-RUN git clone --depth 1 https://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@github.com/MSRSSP/qemu.git
-WORKDIR qemu
-RUN git pull && git checkout 18044a19108ce6e1714d5b22364c193d0979b079
-FROM qemu-env AS qemu
+FROM env AS qemu
+COPY .git /slice/.git
+COPY qemu /slice/qemu
+#RUN git clone --depth 1 https:github.com/MSRSSP/qemu.git
+WORKDIR /slice/qemu
+#RUN git pull && git checkout 18044a19108ce6e1714d5b22364c193d0979b079
+#FROM qemu-env AS qemu
 RUN ./configure --target-list=riscv64-softmmu && make -j `nproc`
 
 FROM env as slice-env
 COPY --from=toolchain-build /opt/riscv /opt/riscv
-COPY --from=qemu /qemu/build/qemu-system-riscv64 /slice/qemu/build/
+COPY --from=qemu /slice/qemu/build/qemu-system-riscv64 /slice/qemu/build/
 RUN cp /opt/riscv/sysroot/usr/include/gnu/stubs-lp64d.h  /opt/riscv/sysroot/usr/include/gnu/stubs-lp64.h
 RUN ln -s /opt/riscv/bin/* /usr/local/bin/
 RUN apt install -y git libyaml-dev libelf-dev device-tree-compiler gdisk parted
 
 FROM slice-env as linux
 ##### Download a tested linux kernel #######
-WORKDIR /slice/
+WORKDIR /slice
 RUN git clone https://github.com/torvalds/linux
 COPY 0001-Add-microchip-specific-clock-and-devices.patch /slice/
 WORKDIR /slice/linux
@@ -61,19 +63,20 @@ RUN make ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- \
 FROM slice-env as slice
 COPY --from=linux /slice/linux/arch/riscv/boot/Image /slice/linux/arch/riscv/boot/Image 
 WORKDIR /slice
-RUN git clone -b isolate-sbi https://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@github.com/MSRSSP/slice-hss.git
-WORKDIR /slice/slice-hss
-RUN sed -i "s/github.com/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@github.com/g" .gitmodules
-RUN git submodule update --init --recursive
-
-COPY def_config_slice /slice/slice-hss/.config
+COPY ./.git /slice/.git
+COPY ./slice-boot /slice/slice-boot
+#RUN git clone -b isolate-sbi https://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@github.com/MSRSSP/slice-hss.git
+WORKDIR /slice/slice-boot
+#RUN sed -i "s/github.com/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@github.com/g" .gitmodules
+#RUN git submodule update --init --recursive
+COPY def_config_slice /slice/slice-boot/.config
 RUN cp boards/slice/def_config_slice .config
 RUN mkdir Default-qemu
 RUN sh make-qemu.sh
 
 ##### Build slice boot payload and create SD card image ########
 
-WORKDIR /slice/slice-hss/bypass-uboot
+WORKDIR /slice/slice-boot/bypass-uboot
 RUN cd dts && make && cd .. && mkdir build
 RUN sed -i "s/sudo//g" Makefile
 #RUN make qemu EXAMPLE=slice
