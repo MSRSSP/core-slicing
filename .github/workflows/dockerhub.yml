@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - master
-  workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
 
 jobs:
   dockerhub:
