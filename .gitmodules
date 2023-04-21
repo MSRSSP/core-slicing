@@ -1,7 +1,3 @@
 [submodule "qemu"]
 	path = qemu
 	url = https://github.com/MSRSSP/qemu.git
-[submodule "slice-boot"]
-	path = slice-boot
-	url = https://github.com/MSRSSP/slice-hss.git
-	branch = isolate-sbi
