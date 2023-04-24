@@ -8,10 +8,11 @@ Docker is installed on your system.
 
 * Docker
 
-## Build
+## Quick start
 
-Jump to [quick-start](quick-start.md) if you do not want to compile from source code.
+Jump to [:book:quick-start](quick-start.md) if you do not want to compile from source code.
 
+## Build from source
 Follow [build tutorial](build.md) to build from source code.
 
 ## Limitations

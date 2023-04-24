@@ -4,7 +4,7 @@
 
 ```
 cd demo
-docker build ./ --tage slice-demo
+docker build ./ --tag slice-demo
 ```
 
 ### Step 1: Boot slice-0
@@ -33,6 +33,8 @@ configuration.
 ```
 
 ### Step2: Login to Guest Slices
+![Outputs in UART-0, UART-2 and UART-3](osdi-artifact-demo.png)
+
 
 To login into the guest slices, open a new terminal and follow the commands below:
 ```
@@ -58,6 +60,7 @@ docker exec -it $(cat cidfile.txt) telnet localhost 5433
 NIT: `docker exec -it $(cat cidfile.txt) telnet localhost 5431` is used to
 output messages before a slice is started. It is not necessary for logging into
 the guest slices.
+
 
 ## Configure and Manage Slices
 
@@ -209,6 +212,7 @@ report dump
         617474657374003100746573742d6461746100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 ```
 
+:key: The attestation and verification keypair is currently hardcoded in slice-hss/bypass-uboot/keys/key_private_key.h and slice-hss/bypass-uboot/keys/key_public_key.h.
 
 ### [Optional] Create more slices
 To create more slices, follow the same steps as creating a new slice.
@@ -249,4 +253,3 @@ slice 3: slice_mem_size    = 512d MiB
 ...
 ```
 
-[image](osdi-artifact-demo.png)
