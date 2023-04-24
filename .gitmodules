@@ -5,3 +5,6 @@
 	path = slice-hss
 	url = git@github.com:MSRSSP/slice-hss.git
 	branch = slice-rebase
+[submodule "sliceloade-x64"]
+	path = sliceloade-x64
+	url = git@github.com:MSRSSP/sliceloader-x64.git
