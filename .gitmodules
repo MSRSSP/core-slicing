@@ -1,6 +1,6 @@
 [submodule "qemu"]
 	path = qemu
-	url = https://github.com/MSRSSP/qemu.git
+	url = git@github.com:MSRSSP/qemu.git
 [submodule "slice-hss"]
 	path = slice-hss
 	url = git@github.com:MSRSSP/slice-hss.git
