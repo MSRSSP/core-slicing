@@ -8,16 +8,16 @@ Docker is installed on your system.
 
 * Docker
 
-## Quick start
+## :rocket: Quick start
 
-Jump to [:book:quick-start](quick-start.md) if you do not want to compile from source code.
+Jump to :point_right: [quick-start](quick-start.md) if you do not want to compile from source code.
 
-## Build from source
-Follow [build tutorial](build.md) to build from source code.
+## :hourglass: :wrench: Build from source
+Follow :point_right: [build tutorial](build.md) to build from source code.
 
-## Limitations
-There are some limitations of using QEMU, such as: 
-* Timestamp from log is not useful since it is under QEMU.
-* Slice cache will always show zero value for cache controller registers since it is unimplemented.
-* UART-0 is assigned to slice-0, UART-1 is reserved for normal harts to use before they are locked into a slice, UART-2 is used by hart1 and hart2, UART2 is used by hart 3 and hart4.
+## :-1: Limitations
+There are some limitations of using QEMU-based emulation, such as: 
+* :alarm_clock: Timestamp from log is not useful since it is under QEMU.
+* :construction: Slice cache will always show zero value for cache controller registers since it is unimplemented.
+* :tv: UART-0 is assigned to slice-0, UART-1 is reserved for normal harts to use before they are locked into a slice, UART-2 is used by hart1 and hart2, UART2 is used by hart 3 and hart4.
 
