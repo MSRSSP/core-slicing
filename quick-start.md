@@ -3,6 +3,7 @@
 ### Download prebuilts into a docker image
 
 ```
+make slice-ubuntu
 cd demo
 docker build ./ --tag slice-demo
 ```
