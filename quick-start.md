@@ -3,7 +3,6 @@
 ### Download prebuilts into a docker image
 
 ```
-make slice-ubuntu
 cd demo
 docker build ./ --tag slice-demo
 ```
@@ -14,7 +13,7 @@ docker build ./ --tag slice-demo
 docker run -it --privileged --cidfile cidfile.txt -v /dev:/dev slice-demo
 ```
 
-The container will run QEMU to emulate a Microchip PolarFire machine with a
+The container will run a modified QEMU to emulate a Microchip PolarFire machine with a
 per-core reset device. By default, it uses an example Slice configuration (2
 Slices, each using 2 cores and 512 MB memory) provided in
 `slice-hss/bypass-uboot/config/slice/config.yaml`. The qemu default console is
@@ -80,38 +79,38 @@ slice attest ${slice_idx} ${data(max 64bytes)}
 ### Checking slice configurations from slice-0
 
 In slice-0: Run `slice dump` to check the current slice configurations:
-        ```
-        slice dump
-        slice 1: slice_type        = 1
-        slice 1: slice_status      = ACTIVE
-        slice 1: Boot HART         = 1
-        slice 1: HARTs             = 1*,2*
-        slice 1: slice_mem_start   = 0x80000000
-        slice 1: slice_mem_size    = 512d MiB
-        slice 1: slice_fw_start    = 0x0
-        slice 1: slice_fw_size     = 0x0
-        slice 1: guest_kernel_src  = 0xa2000740 (loaded by slice-0)
-        slice 1: guest_kernel_size = 0x1ce4600
-        slice 1: slice_kernel_start= 0x80200000 (copy from guest_kernel_src)
-        slice 1: guest_fdt_src     = 0xa3ce4d40 (loaded by slice-0)
-        slice 1: slice_fdt_start   = 0x82ee4600 (copy from guest_fdt_src)
-        ...
+```
+slice dump
+slice 1: slice_type        = 1
+slice 1: slice_status      = ACTIVE
+slice 1: Boot HART         = 1
+slice 1: HARTs             = 1*,2*
+slice 1: slice_mem_start   = 0x80000000
+slice 1: slice_mem_size    = 512d MiB
+slice 1: slice_fw_start    = 0x0
+slice 1: slice_fw_size     = 0x0
+slice 1: guest_kernel_src  = 0xa2000740 (loaded by slice-0)
+slice 1: guest_kernel_size = 0x1ce4600
+slice 1: slice_kernel_start= 0x80200000 (copy from guest_kernel_src)
+slice 1: guest_fdt_src     = 0xa3ce4d40 (loaded by slice-0)
+slice 1: slice_fdt_start   = 0x82ee4600 (copy from guest_fdt_src)
+...
 
-        slice 2: slice_type        = 1
-        slice 2: slice_status      = ACTIVE
-        slice 2: Boot HART         = 3
-        slice 2: HARTs             = 3*,4*
-        slice 2: slice_mem_start   = 0x1000000000
-        slice 2: slice_mem_size    = 512d MiB
-        slice 2: slice_fw_start    = 0x0
-        slice 2: slice_fw_size     = 0x0
-        slice 2: guest_kernel_src  = 0xa3ce7438 (loaded by slice-0)
-        slice 2: guest_kernel_size = 0x1ce7600
-        slice 2: slice_kernel_start= 0x1000200000 (copy from guest_kernel_src)
-        slice 2: guest_fdt_src     = 0xa59cea38 (loaded by slice-0)
-        slice 2: slice_fdt_start   = 0x1002ee7600 (copy from guest_fdt_src)
-        ...
-        ```
+slice 2: slice_type        = 1
+slice 2: slice_status      = ACTIVE
+slice 2: Boot HART         = 3
+slice 2: HARTs             = 3*,4*
+slice 2: slice_mem_start   = 0x1000000000
+slice 2: slice_mem_size    = 512d MiB
+slice 2: slice_fw_start    = 0x0
+slice 2: slice_fw_size     = 0x0
+slice 2: guest_kernel_src  = 0xa3ce7438 (loaded by slice-0)
+slice 2: guest_kernel_size = 0x1ce7600
+slice 2: slice_kernel_start= 0x1000200000 (copy from guest_kernel_src)
+slice 2: guest_fdt_src     = 0xa59cea38 (loaded by slice-0)
+slice 2: slice_fdt_start   = 0x1002ee7600 (copy from guest_fdt_src)
+...
+ ```
 
 Look for the following details:
 
@@ -171,19 +170,39 @@ slice reset 1
 
 ### Creating a new slice
 In slice-0, create a new slice-1:
-slice create -c <cpu-mask> -m <memory-start> -s <memory-size> -i <guest_kernel_src> -z <guest_kernel_size> -f <guest_fdt_src>
+slice create -c <cpu_mask> -m <memory_start> -s <memory_size> -i <guest_kernel_src> -z <guest_kernel_size> -f <guest_fdt_src>
 ```
 slice create -c 0x2 -m 0x1020000000 -s 0x20000000 -i 0xa2000740 -z 0x1ce4600 -f 0xa3ce7d40
 ```
 
-* Use the same guest_kernel_src and guest_fdt_src from slice-1 or slice-2
-  configuration. We only support to load slice kernel from in-ram kernel image
-  in our prototype.
+The creation of a new slice is only allowed if its memory and CPU resources does
+not overlap with any other slice's. Note the following parameters:
 
-* The creation of a new slice is only allowed if its configuration for memory
-  and CPU does not overlap with any other slice resources.
+* cpu_mask: Uses bit k to define whether CPU-k is assigned to the slice. CPU-0 is
+  always assigned to Slice-0 and thus cannot be used by any guest slice. The
+  assignable CPUs are CPUs 1-4.
+* memory_start: Defines the starting address of assigned memory to the new
+  slice.
+* memory_size: Defines the total memory size we assigned to the new slice. The
+  new slice will use memory range: [memory_start, memory_start + memory_size).
+  In this demo, you can pick a continuous memory **subrange** from [0x8000_0000,
+  0xa000_0000) and [0x1000000000, 0x1040000000). Other ranges are reserved by
+  Slice-0 or not valid.
+* guest_kernel_src: Source address of the guest kernel image.
+* guest_kernel_size: Guest kernel image size.
+* guest_fdt_src: Source address of the device tree. 
+* Find the guest_kernel_src, guest_kernel_size, and guest_fdt_src from the original
+slice-1 or slice-2 configurations. You can use `slice dump` to get those parameters. 
+You will reuse the guest_kernel_src, guest_kernel_size, and guest_fdt_src parameters for different slices. This is because the slice initial data/code can only be loaded from an in-ram data once Slice-0 is booted. Sliceloader will copy the kernel and device tree from the sources to slice-private memory, when booting a new guest slice.
+* This demo includes two in-ram kernel images and flat device trees. To ensure
+  that Sliceloader can load the guest image and device tree from valid locations
+  when creating a new slice, you can use any of the valid addresses. For example
+  (see [slice example](#checking-slice-configurations-from-slice-0)), you can
+  use `-i 0xa3ce7438 -z 0x1ce7600` or `-i 0xa2000740 -z 0x1ce4600` for the
+  kernel image, and `-f 0xa59cea38` or `-f 0xa3ce4d40` for the device tree.
 
-* Run `slice dump` again to check the new slice configurations
+
+Run `slice dump` again to check the new slice configurations once created a new slice.
 
 ### Start the new slice
 
@@ -213,12 +232,12 @@ report dump
         617474657374003100746573742d6461746100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 ```
 
-:key: The attestation and verification keypair is currently hardcoded in slice-hss/bypass-uboot/keys/key_private_key.h and slice-hss/bypass-uboot/keys/key_public_key.h.
+:key: The attestation and verification keypair is currently hardcoded in `slice-hss/bypass-uboot/keys/key_private_key.h` and `slice-hss/bypass-uboot/keys/key_public_key.h`.
 
 ### [Optional] Create more slices
-To create more slices, follow the same steps as creating a new slice.
+If you need to create additional slices, simply follow the same steps ([Create](#creating-a-new-slice) and [Start](#start-the-new-slice)) as when creating a new slice. However, keep in mind that you may need to [delete](#deleting-a-slice-eg-slice-1) some guest slices in order to free up resources for new slices.
 
-Example:
+Example (Delete slice 2 and create a new slice-2 and slice-3):
 
 ```
 slice delete 2
@@ -254,3 +273,4 @@ slice 3: slice_mem_size    = 512d MiB
 ...
 ```
 
+Follow [Create](#creating-a-new-slice) and [Start](#start-the-new-slice) to create and start new slices.
