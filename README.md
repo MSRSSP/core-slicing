@@ -19,4 +19,6 @@ There are some limitations of using QEMU-based emulation, such as:
 
 ## Core slicing x86 prototype
 
-Jump to :point_right: [slice-x86](https://github.com/MSRSSP/sliceloader-x64#readme) for tutorials. You need a machine with SR-IO support NIC.
+Jump to :point_right: [slice-x86](https://github.com/MSRSSP/sliceloader-x64#readme) for x86 tutorials. You need a machine with SR-IO support NIC.
+
+Jump to :point_right: [slice-x86-exp](x86-exp/README.md)
