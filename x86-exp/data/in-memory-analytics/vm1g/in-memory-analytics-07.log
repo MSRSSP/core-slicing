@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8200217119112315 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8205746967679911 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8193956170797815 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8178922334505396 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8175927536337962.
+The best model improves the baseline by 23.23%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 4: The Great American Girl Robbery (1979)
+ 5: The Keepers (2017)
+ 6: The Marquis (2011)
+ 7: Tintin and the Lake of Sharks (1972)
+ 8: Atharintiki Daaredi (2013)
+ 9: Sex Is Zero (2002)
+10: Alien Tornado (2012)
+11: The Immoral Mr. Teas (1959)
+12: Heaven Is a Playground (1991)
+13: The Prodigies (2011)
+14: Frankenstein Conquers the World (1965)
+15: Rio Diablo (1993)
+16: Monster High: Fright On! (2011)
+17: More Brains! A Return to the Living Dead (2011)
+18: UFO - Distruggete base Luna! (1971)
+19: Fantastic Lies (2016)
+20: Lemonade Mouth (2011)
+21: Love Life (2001)
+22: "2013 Rock and Roll Hall of Fame Induction Ceremony
+23: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+24: Patient Zero (2017)
+25: Far Out Man (1990)
+26: "Mahabharata
+27: Ali Baba Bunny (1957)
+28: 1 (2014)
+29: Mamitas (2011)
+30: Swept Under (2015)
+31: Here Without Me (Inja bedoone man) (2011)
+32: Estamos Juntos (2011)
+33: Zakochani (2000)
+34: Mixed Kebab (2012)
+35: Duplicate (1998)
+36: Spine Tingler!  The William Castle Story (2007)
+37: Extreme Private Eros: Love Song 1974 (1974)
+38: Lavalantula (2015)
+39: Love Is Blind (2013)
+40: Daisy Town (1971)
+41: Beltracchi - The Art of the Forgery (2014)
+42: Desierto (2016)
+43: Manhattan Romance (2015)
+44: Company (2002)
+45: Tiger Orange (2014)
+46: Foo Fighters: Back and Forth (2011)
+47: "Rage
+48: Susie Q (1996)
+49: Emmanuelle 5 (1987)
+50: The Emperor in August (2015)
+Benchmark execution time: 754637ms

@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8211996404577605 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8208157908056765 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8173304161025062 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8160937509887961 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8158401216557066.
+The best model improves the baseline by 23.40%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: The Story of Asya Klyachina (1966)
+ 3: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 4: The Great American Girl Robbery (1979)
+ 5: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 6: The Immoral Mr. Teas (1959)
+ 7: The Marquis (2011)
+ 8: The Keepers (2017)
+ 9: Tintin and the Lake of Sharks (1972)
+10: 1 (2014)
+11: Heaven Is a Playground (1991)
+12: Jellyfish Eyes (2013)
+13: UFO - Distruggete base Luna! (1971)
+14: Love Is Blind (2013)
+15: The Prodigies (2011)
+16: Alien Tornado (2012)
+17: PSYCHO-PASS: The Movie (2016)
+18: Mamitas (2011)
+19: Love Life (2001)
+20: Losing the North (2015)
+21: Sex Is Zero (2002)
+22: Rio Diablo (1993)
+23: Punk Vacation (1987)
+24: Far Out Man (1990)
+25: Frankenstein Conquers the World (1965)
+26: "Mahabharata
+27: Special Section (1975)
+28: Lost in a Harem (1944)
+29: Lavalantula (2015)
+30: The Boss's Daughter (2016)
+31: More Brains! A Return to the Living Dead (2011)
+32: Kokoko (2012)
+33: Atharintiki Daaredi (2013)
+34: Emmanuelle 5 (1987)
+35: Estamos Juntos (2011)
+36: Lemonade Mouth (2011)
+37: Daisy Town (1971)
+38: A Year in Burgundy (2013)
+39: The Perfect Guy (2015)
+40: The Russian Novel (2013)
+41: Zerophilia (2005)
+42: The Ties That Bind (2015)
+43: "Tramp
+44: Monster High: Fright On! (2011)
+45: Desierto (2016)
+46: Duplicate (1998)
+47: Garage Olimpo (1999)
+48: Stalled (2013)
+49: My Super Psycho Sweet 16 (2009)
+50: Salam Neighbor (2015)
+Benchmark execution time: 684617ms

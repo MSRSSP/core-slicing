@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8195162980333275 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8205556033124589 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8184950349524032 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.816868030446464 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8166207464516348.
+The best model improves the baseline by 23.32%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Immoral Mr. Teas (1959)
+ 4: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 5: Alien Tornado (2012)
+ 6: The Marquis (2011)
+ 7: Tintin and the Lake of Sharks (1972)
+ 8: The Great American Girl Robbery (1979)
+ 9: Duplicate (1998)
+10: Lavalantula (2015)
+11: UFO - Distruggete base Luna! (1971)
+12: Heaven Is a Playground (1991)
+13: The Prodigies (2011)
+14: Lemonade Mouth (2011)
+15: Far Out Man (1990)
+16: The Keepers (2017)
+17: 1 (2014)
+18: Frankenstein Conquers the World (1965)
+19: Rio Diablo (1993)
+20: PSYCHO-PASS: The Movie (2016)
+21: Heroes Shed No Tears (1986)
+22: Vampyres (1974)
+23: More Brains! A Return to the Living Dead (2011)
+24: Susie Q (1996)
+25: Monster High: Fright On! (2011)
+26: Sex Is Zero (2002)
+27: Emmanuelle 5 (1987)
+28: Lilian's Story (1995)
+29: Zakochani (2000)
+30: Last Day of Summer (2009)
+31: "Rage
+32: Thor: Ragnarok (2017)
+33: Here Without Me (Inja bedoone man) (2011)
+34: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+35: "Muppet Christmas: Letters to Santa
+36: The Story of Asya Klyachina (1966)
+37: Daisy Town (1971)
+38: The Harmony Game (2011)
+39: Horrorvision (2001)
+40: "2013 Rock and Roll Hall of Fame Induction Ceremony
+41: Carol Channing: Larger Than Life (2012)
+42: Mamitas (2011)
+43: "Stolen Collection
+44: Estamos Juntos (2011)
+45: The Ties That Bind (2015)
+46: Swept Under (2015)
+47: Tiger Orange (2014)
+48: An Interesting Story (1904)
+49: Atharintiki Daaredi (2013)
+50: Provocateur (1998)
+Benchmark execution time: 712647ms

@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8241370966633359 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8221274239939389 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.818969661153704 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8175282421016405 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8172673304832039.
+The best model improves the baseline by 23.26%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Keepers (2017)
+ 4: Atharintiki Daaredi (2013)
+ 5: The Great American Girl Robbery (1979)
+ 6: Love Life (2001)
+ 7: The Marquis (2011)
+ 8: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 9: The Story of Asya Klyachina (1966)
+10: Sex Is Zero (2002)
+11: The Immoral Mr. Teas (1959)
+12: Tintin and the Lake of Sharks (1972)
+13: 1 (2014)
+14: Frankenstein Conquers the World (1965)
+15: Scavenger Hunt (1979)
+16: Heaven Is a Playground (1991)
+17: Mixed Kebab (2012)
+18: Monster High: Fright On! (2011)
+19: "Mahabharata
+20: Estamos Juntos (2011)
+21: The Prodigies (2011)
+22: More Brains! A Return to the Living Dead (2011)
+23: Punk Vacation (1987)
+24: Patient Zero (2017)
+25: Love Is Blind (2013)
+26: PSYCHO-PASS: The Movie (2016)
+27: Fantastic Lies (2016)
+28: Losing the North (2015)
+29: Just Write (1997)
+30: Far Out Man (1990)
+31: The Boss's Daughter (2016)
+32: Lost in a Harem (1944)
+33: UFO - Distruggete base Luna! (1971)
+34: Tr?mulo (2015)
+35: "2013 Rock and Roll Hall of Fame Induction Ceremony
+36: Rio Diablo (1993)
+37: Zerophilia (2005)
+38: Lemonade Mouth (2011)
+39: A Year in Burgundy (2013)
+40: Heroes Shed No Tears (1986)
+41: Vampyres (1974)
+42: Desierto (2016)
+43: Daisy Town (1971)
+44: Beltracchi - The Art of the Forgery (2014)
+45: Don't You Forget About Me (2009)
+46: Lagerfeld Confidential (2007)
+47: Scooby-Doo! Frankencreepy (2014)
+48: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+49: Salam Neighbor (2015)
+50: "Tripper
+Benchmark execution time: 746644ms

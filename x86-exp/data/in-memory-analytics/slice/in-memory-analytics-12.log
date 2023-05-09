@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8226885780102335 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.821318990900549 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.821765467644749 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8165503973021561 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8162600950126674.
+The best model improves the baseline by 23.36%.
+Movies recommended for you:
+ 1: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 2: Hamoun (1990)
+ 3: The Great American Girl Robbery (1979)
+ 4: Fantastic Lies (2016)
+ 5: The Marquis (2011)
+ 6: Atharintiki Daaredi (2013)
+ 7: Sex Is Zero (2002)
+ 8: Tintin and the Lake of Sharks (1972)
+ 9: 1 (2014)
+10: Love Life (2001)
+11: Monster High: Fright On! (2011)
+12: Estamos Juntos (2011)
+13: The Keepers (2017)
+14: Heaven Is a Playground (1991)
+15: Frankenstein Conquers the World (1965)
+16: The Immoral Mr. Teas (1959)
+17: Varalaru (2006)
+18: Scavenger Hunt (1979)
+19: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+20: More Brains! A Return to the Living Dead (2011)
+21: PSYCHO-PASS: The Movie (2016)
+22: "Mahabharata
+23: UFO - Distruggete base Luna! (1971)
+24: Love Is Blind (2013)
+25: Last Day of Summer (2009)
+26: Duplicate (1998)
+27: "2013 Rock and Roll Hall of Fame Induction Ceremony
+28: The Prodigies (2011)
+29: Patient Zero (2017)
+30: Far Out Man (1990)
+31: Lavalantula (2015)
+32: Daisy Town (1971)
+33: Farmageddon (2011)
+34: Rio Diablo (1993)
+35: Losing the North (2015)
+36: Tr?mulo (2015)
+37: The War at Home (1979)
+38: Emmanuelle 5 (1987)
+39: Lemonade Mouth (2011)
+40: Jeff Dunham: Arguing with Myself (2006)
+41: Spine Tingler!  The William Castle Story (2007)
+42: Lost in a Harem (1944)
+43: Jeff Dunham: Jeff Dunham's Very Special Christmas Special (2008)
+44: Just Write (1997)
+45: Mamitas (2011)
+46: Loser Takes All! (Qui perd gagne !) (2003)
+47: Ali Baba Bunny (1957)
+48: Desierto (2016)
+49: Extreme Private Eros: Love Song 1974 (1974)
+50: Tank 432 (2015)
+Benchmark execution time: 766390ms

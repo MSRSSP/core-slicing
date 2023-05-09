@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8206684277769543 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8209318414945874 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8210458737150002 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8173838635376965 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8170943879790611.
+The best model improves the baseline by 23.28%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Immoral Mr. Teas (1959)
+ 4: Tintin and the Lake of Sharks (1972)
+ 5: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 6: The Marquis (2011)
+ 7: Sex Is Zero (2002)
+ 8: Atharintiki Daaredi (2013)
+ 9: The Great American Girl Robbery (1979)
+10: Emmanuelle 5 (1987)
+11: Heaven Is a Playground (1991)
+12: The Prodigies (2011)
+13: Frankenstein Conquers the World (1965)
+14: Duplicate (1998)
+15: UFO - Distruggete base Luna! (1971)
+16: Monster High: Fright On! (2011)
+17: The Keepers (2017)
+18: Fantastic Lies (2016)
+19: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+20: Lavalantula (2015)
+21: 1 (2014)
+22: Far Out Man (1990)
+23: More Brains! A Return to the Living Dead (2011)
+24: Patient Zero (2017)
+25: Losing the North (2015)
+26: Lemonade Mouth (2011)
+27: Tiger Orange (2014)
+28: High Risk (1981)
+29: Rio Diablo (1993)
+30: PSYCHO-PASS: The Movie (2016)
+31: Susie Q (1996)
+32: The Story of Asya Klyachina (1966)
+33: Last Day of Summer (2009)
+34: Estamos Juntos (2011)
+35: "Mahabharata
+36: Swept Under (2015)
+37: Here Without Me (Inja bedoone man) (2011)
+38: Heroes Shed No Tears (1986)
+39: Vampyres (1974)
+40: Ali Baba Bunny (1957)
+41: "2013 Rock and Roll Hall of Fame Induction Ceremony
+42: Daisy Town (1971)
+43: V??peli K?rmy - Taisteluni (1994)
+44: Alien Tornado (2012)
+45: Zakochani (2000)
+46: The Ties That Bind (2015)
+47: Love Life (2001)
+48: Farmageddon (2011)
+49: Beltracchi - The Art of the Forgery (2014)
+50: "Muppet Christmas: Letters to Santa
+Benchmark execution time: 771837ms

@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8240297723890758 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8213163231000108 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.816899179559463 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.818201114308243 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 10, and its RMSE on the test set is 0.8165750109486729.
+The best model improves the baseline by 23.33%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Marquis (2011)
+ 4: The Prodigies (2011)
+ 5: Heaven Is a Playground (1991)
+ 6: Tintin and the Lake of Sharks (1972)
+ 7: Snug as a Bug (U Pana Boga za piecem) (1998)
+ 8: Emmanuelle 5 (1987)
+ 9: Lost in a Harem (1944)
+10: The Keepers (2017)
+11: Love Is Blind (2013)
+12: Duplicate (1998)
+13: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+14: "Mahabharata
+15: Love Life (2001)
+16: Patient Zero (2017)
+17: Here Without Me (Inja bedoone man) (2011)
+18: Evilenko (2004)
+19: Richard Jeni: A Big Steaming Pile of Me (2005)
+20: Awara Paagal Deewana (2002)
+21: A Year in Burgundy (2013)
+22: Shakthi: The Power (2002)
+23: Jeff Dunham: Arguing with Myself (2006)
+24: High Risk (1981)
+25: Pizza (2012)
+26: Rio Diablo (1993)
+27: Ali Baba Bunny (1957)
+28: "Passion of Ayn Rand
+29: Lilian's Story (1995)
+30: Far Out Man (1990)
+31: Aarya (2004)
+32: Garfield's Fun Fest (2008)
+33: Frankenstein Conquers the World (1965)
+34: Daisy Town (1971)
+35: Genius on Hold (2013)
+36: Greg Fitzsimmons: Life on Stage (2013)
+37: Blue Summer (1973)
+38: Tr?mulo (2015)
+39: Farmageddon (2011)
+40: Atharintiki Daaredi (2013)
+41: Extreme Private Eros: Love Song 1974 (1974)
+42: The Harmony Game (2011)
+43: More Brains! A Return to the Living Dead (2011)
+44: Cemetery of Splendour (2015)
+45: Cari fottutissimi amici (1994)
+46: The Third Lover (1962)
+47: Let the Women Wait! (1998)
+48: The War at Home (1979)
+49: Heroes Shed No Tears (1986)
+50: Vampyres (1974)
+Benchmark execution time: 732798ms

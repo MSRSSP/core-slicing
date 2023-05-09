@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8247627517689817 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8212153424952376 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8190385990896683 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.816437427929946 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8161354404073198.
+The best model improves the baseline by 23.37%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Immoral Mr. Teas (1959)
+ 4: 1 (2014)
+ 5: The Marquis (2011)
+ 6: Tintin and the Lake of Sharks (1972)
+ 7: Love Life (2001)
+ 8: Frankenstein Conquers the World (1965)
+ 9: The Great American Girl Robbery (1979)
+10: Lavalantula (2015)
+11: Fantastic Lies (2016)
+12: Estamos Juntos (2011)
+13: Atharintiki Daaredi (2013)
+14: UFO - Distruggete base Luna! (1971)
+15: Heaven Is a Playground (1991)
+16: Alien Tornado (2012)
+17: Sex Is Zero (2002)
+18: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+19: The Prodigies (2011)
+20: The Keepers (2017)
+21: The Story of Asya Klyachina (1966)
+22: Zakochani (2000)
+23: PSYCHO-PASS: The Movie (2016)
+24: Monster High: Fright On! (2011)
+25: Rio Diablo (1993)
+26: Far Out Man (1990)
+27: More Brains! A Return to the Living Dead (2011)
+28: "2013 Rock and Roll Hall of Fame Induction Ceremony
+29: Daisy Town (1971)
+30: Duplicate (1998)
+31: Last Day of Summer (2009)
+32: "Mahabharata
+33: Love Is Blind (2013)
+34: Lemonade Mouth (2011)
+35: Susie Q (1996)
+36: Mamitas (2011)
+37: Losing the North (2015)
+38: Farmageddon (2011)
+39: "Muppet Christmas: Letters to Santa
+40: The Ties That Bind (2015)
+41: Tr?mulo (2015)
+42: Emmanuelle 5 (1987)
+43: Ali Baba Bunny (1957)
+44: Spine Tingler!  The William Castle Story (2007)
+45: Garfield's Fun Fest (2008)
+46: The War at Home (1979)
+47: Lost in a Harem (1944)
+48: "Stolen Collection
+49: Tiger Orange (2014)
+50: Jeff Dunham: Jeff Dunham's Very Special Christmas Special (2008)
+Benchmark execution time: 663643ms

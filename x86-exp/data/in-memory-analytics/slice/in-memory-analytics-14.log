@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8230220718955229 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8223676532651338 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8201887505661712 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8171260329178345 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8168307892571094.
+The best model improves the baseline by 23.30%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: The Story of Asya Klyachina (1966)
+ 3: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 4: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 5: Duplicate (1998)
+ 6: The Immoral Mr. Teas (1959)
+ 7: Tintin and the Lake of Sharks (1972)
+ 8: Alien Tornado (2012)
+ 9: The Marquis (2011)
+10: Heroes Shed No Tears (1986)
+11: Vampyres (1974)
+12: Estamos Juntos (2011)
+13: Atharintiki Daaredi (2013)
+14: Emmanuelle 5 (1987)
+15: UFO - Distruggete base Luna! (1971)
+16: Heaven Is a Playground (1991)
+17: Frankenstein Conquers the World (1965)
+18: The Prodigies (2011)
+19: Far Out Man (1990)
+20: The Keepers (2017)
+21: PSYCHO-PASS: The Movie (2016)
+22: Rio Diablo (1993)
+23: The Ties That Bind (2015)
+24: Jellyfish Eyes (2013)
+25: Daisy Town (1971)
+26: Sex Is Zero (2002)
+27: Susie Q (1996)
+28: High Risk (1981)
+29: Losing the North (2015)
+30: Last Day of Summer (2009)
+31: Richard Jeni: A Big Steaming Pile of Me (2005)
+32: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+33: Genius on Hold (2013)
+34: Greg Fitzsimmons: Life on Stage (2013)
+35: Blue Summer (1973)
+36: Scavenger Hunt (1979)
+37: More Brains! A Return to the Living Dead (2011)
+38: The Great American Girl Robbery (1979)
+39: Kokoko (2012)
+40: "Stolen Collection
+41: Stalled (2013)
+42: Don't You Forget About Me (2009)
+43: Ahora o nunca (2015)
+44: Monster High: Fright On! (2011)
+45: Farmageddon (2011)
+46: Zakochani (2000)
+47: Emanuelle in Egypt (Velluto nero) (1976)
+48: Horrorvision (2001)
+49: Carol Channing: Larger Than Life (2012)
+50: The Harmony Game (2011)
+Benchmark execution time: 755421ms

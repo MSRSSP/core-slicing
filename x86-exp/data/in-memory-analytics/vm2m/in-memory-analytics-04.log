@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8210308418589378 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.821038733240872 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.822483124291509 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8165651604340385 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8163375561612014.
+The best model improves the baseline by 23.35%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Marquis (2011)
+ 4: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 5: Alien Tornado (2012)
+ 6: Pulsar (2011)
+ 7: The Great American Girl Robbery (1979)
+ 8: Mamitas (2011)
+ 9: Even Angels Eat Beans (1973)
+10: Monster High: Fright On! (2011)
+11: Frankenstein Conquers the World (1965)
+12: Tintin and the Lake of Sharks (1972)
+13: Atharintiki Daaredi (2013)
+14: The Keepers (2017)
+15: Heaven Is a Playground (1991)
+16: Lost in a Harem (1944)
+17: Patient Zero (2017)
+18: Kokoko (2012)
+19: Love Life (2001)
+20: Extreme Private Eros: Love Song 1974 (1974)
+21: The Spacewalker (2017)
+22: God?s Wedding (As Bodas de Deus) (1999)
+23: Rio Diablo (1993)
+24: "Mahabharata
+25: Justice League (2017)
+26: 1 (2014)
+27: Daisy Town (1971)
+28: Far Out Man (1990)
+29: PSYCHO-PASS: The Movie (2016)
+30: It Happened on Fifth Avenue (1947)
+31: A Year in Burgundy (2013)
+32: More Brains! A Return to the Living Dead (2011)
+33: UFO - Distruggete base Luna! (1971)
+34: Loser Takes All! (Qui perd gagne !) (2003)
+35: The War at Home (1979)
+36: Here Without Me (Inja bedoone man) (2011)
+37: Sex Is Zero (2002)
+38: Scavenger Hunt (1979)
+39: "Frozen North
+40: Thor: Ragnarok (2017)
+41: Lagerfeld Confidential (2007)
+42: Scooby-Doo! Frankencreepy (2014)
+43: The Third Lover (1962)
+44: Hatchet III (2013)
+45: An Interesting Story (1904)
+46: Tr?mulo (2015)
+47: The Prodigies (2011)
+48: Go for It (1983)
+49: Love Is Blind (2013)
+50: Desierto (2016)
+Benchmark execution time: 724675ms

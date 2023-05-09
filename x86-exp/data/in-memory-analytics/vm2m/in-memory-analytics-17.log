@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8246867885453676 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.820291052568241 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8173779340738091 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8169736948710136 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.816681519078946.
+The best model improves the baseline by 23.32%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: 1 (2014)
+ 4: Atharintiki Daaredi (2013)
+ 5: The Keepers (2017)
+ 6: The Great American Girl Robbery (1979)
+ 7: The Story of Asya Klyachina (1966)
+ 8: Love Life (2001)
+ 9: Frankenstein Conquers the World (1965)
+10: The Marquis (2011)
+11: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+12: Tintin and the Lake of Sharks (1972)
+13: Sex Is Zero (2002)
+14: Heaven Is a Playground (1991)
+15: The Immoral Mr. Teas (1959)
+16: Love Is Blind (2013)
+17: Estamos Juntos (2011)
+18: Lemonade Mouth (2011)
+19: "Mahabharata
+20: The Prodigies (2011)
+21: Punk Vacation (1987)
+22: PSYCHO-PASS: The Movie (2016)
+23: Shock Head Soul (2011)
+24: More Brains! A Return to the Living Dead (2011)
+25: Losing the North (2015)
+26: Far Out Man (1990)
+27: UFO - Distruggete base Luna! (1971)
+28: A Year in Burgundy (2013)
+29: Monster High: Fright On! (2011)
+30: Rio Diablo (1993)
+31: Daisy Town (1971)
+32: Emmanuelle 5 (1987)
+33: Alien Tornado (2012)
+34: Patient Zero (2017)
+35: Just Write (1997)
+36: Jellyfish Eyes (2013)
+37: Lost in a Harem (1944)
+38: Fantastic Lies (2016)
+39: Tr?mulo (2015)
+40: Mixed Kebab (2012)
+41: Kokoko (2012)
+42: Heroes Shed No Tears (1986)
+43: Vampyres (1974)
+44: The Boss's Daughter (2016)
+45: Jeff Dunham: Arguing with Myself (2006)
+46: Lavalantula (2015)
+47: Garage Olimpo (1999)
+48: Duplicate (1998)
+49: "Tripper
+50: "Frozen North
+Benchmark execution time: 786800ms

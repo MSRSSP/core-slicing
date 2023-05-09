@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.822109046054827 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8213705164768745 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8183148295968019 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8167590026530436 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8164770067797261.
+The best model improves the baseline by 23.34%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: Atharintiki Daaredi (2013)
+ 4: The Great American Girl Robbery (1979)
+ 5: The Story of Asya Klyachina (1966)
+ 6: Sex Is Zero (2002)
+ 7: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 8: Fantastic Lies (2016)
+ 9: The Marquis (2011)
+10: 1 (2014)
+11: Tintin and the Lake of Sharks (1972)
+12: The Keepers (2017)
+13: Love Life (2001)
+14: The Immoral Mr. Teas (1959)
+15: Heaven Is a Playground (1991)
+16: Frankenstein Conquers the World (1965)
+17: The Prodigies (2011)
+18: Monster High: Fright On! (2011)
+19: Estamos Juntos (2011)
+20: Patient Zero (2017)
+21: "Mahabharata
+22: More Brains! A Return to the Living Dead (2011)
+23: Scavenger Hunt (1979)
+24: Kokoko (2012)
+25: Love Is Blind (2013)
+26: Emmanuelle 5 (1987)
+27: The Boss's Daughter (2016)
+28: Lemonade Mouth (2011)
+29: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+30: PSYCHO-PASS: The Movie (2016)
+31: Lavalantula (2015)
+32: Rio Diablo (1993)
+33: UFO - Distruggete base Luna! (1971)
+34: Mixed Kebab (2012)
+35: Far Out Man (1990)
+36: Daisy Town (1971)
+37: Ali Baba Bunny (1957)
+38: Jeff Dunham: Arguing with Myself (2006)
+39: Tr?mulo (2015)
+40: Beltracchi - The Art of the Forgery (2014)
+41: "2013 Rock and Roll Hall of Fame Induction Ceremony
+42: Here Without Me (Inja bedoone man) (2011)
+43: Just Write (1997)
+44: Susie Q (1996)
+45: A Year in Burgundy (2013)
+46: Alien Tornado (2012)
+47: Farmageddon (2011)
+48: Heroes Shed No Tears (1986)
+49: Vampyres (1974)
+50: Foo Fighters: Back and Forth (2011)
+Benchmark execution time: 621946ms

@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8219447477813135 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8207695509381441 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8209766692362281 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8166715069153724 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.816381984737342.
+The best model improves the baseline by 23.35%.
+Movies recommended for you:
+ 1: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 2: Hamoun (1990)
+ 3: Fantastic Lies (2016)
+ 4: The Marquis (2011)
+ 5: Tintin and the Lake of Sharks (1972)
+ 6: The Great American Girl Robbery (1979)
+ 7: Sex Is Zero (2002)
+ 8: Scavenger Hunt (1979)
+ 9: Monster High: Fright On! (2011)
+10: Love Is Blind (2013)
+11: Heaven Is a Playground (1991)
+12: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+13: Frankenstein Conquers the World (1965)
+14: More Brains! A Return to the Living Dead (2011)
+15: Love Life (2001)
+16: The Prodigies (2011)
+17: "2013 Rock and Roll Hall of Fame Induction Ceremony
+18: The Immoral Mr. Teas (1959)
+19: "Mahabharata
+20: Estamos Juntos (2011)
+21: UFO - Distruggete base Luna! (1971)
+22: The Keepers (2017)
+23: Last Day of Summer (2009)
+24: Lost in a Harem (1944)
+25: A Year in Burgundy (2013)
+26: Here Without Me (Inja bedoone man) (2011)
+27: The War at Home (1979)
+28: Far Out Man (1990)
+29: Daisy Town (1971)
+30: Jeff Dunham: Arguing with Myself (2006)
+31: Susie Q (1996)
+32: Rio Diablo (1993)
+33: Spine Tingler!  The William Castle Story (2007)
+34: Jeff Dunham: Jeff Dunham's Very Special Christmas Special (2008)
+35: Ali Baba Bunny (1957)
+36: PSYCHO-PASS: The Movie (2016)
+37: Emmanuelle 5 (1987)
+38: Farmageddon (2011)
+39: Mamitas (2011)
+40: Beltracchi - The Art of the Forgery (2014)
+41: 1 (2014)
+42: Evilenko (2004)
+43: "Tramp
+44: Loser Takes All! (Qui perd gagne !) (2003)
+45: Extreme Private Eros: Love Song 1974 (1974)
+46: Tank 432 (2015)
+47: The Spacewalker (2017)
+48: Josh (2000)
+49: Foo Fighters: Back and Forth (2011)
+50: Just Write (1997)
+Benchmark execution time: 721796ms

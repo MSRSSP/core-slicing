@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8199413262612978 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.821254828386801 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8196551847708479 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8176034350256286 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8173114778979563.
+The best model improves the baseline by 23.26%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Marquis (2011)
+ 4: Tintin and the Lake of Sharks (1972)
+ 5: Atharintiki Daaredi (2013)
+ 6: The Great American Girl Robbery (1979)
+ 7: Sex Is Zero (2002)
+ 8: The Keepers (2017)
+ 9: Love Life (2001)
+10: Estamos Juntos (2011)
+11: Heaven Is a Playground (1991)
+12: Frankenstein Conquers the World (1965)
+13: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+14: 1 (2014)
+15: "Mahabharata
+16: Patient Zero (2017)
+17: Fantastic Lies (2016)
+18: Lavalantula (2015)
+19: More Brains! A Return to the Living Dead (2011)
+20: Here Without Me (Inja bedoone man) (2011)
+21: Last Day of Summer (2009)
+22: UFO - Distruggete base Luna! (1971)
+23: Love Is Blind (2013)
+24: "2013 Rock and Roll Hall of Fame Induction Ceremony
+25: Alien Tornado (2012)
+26: Rio Diablo (1993)
+27: Monster High: Fright On! (2011)
+28: Varalaru (2006)
+29: The Prodigies (2011)
+30: Company (2002)
+31: PSYCHO-PASS: The Movie (2016)
+32: Farmageddon (2011)
+33: The War at Home (1979)
+34: Far Out Man (1990)
+35: Ali Baba Bunny (1957)
+36: Daisy Town (1971)
+37: Tr?mulo (2015)
+38: Emmanuelle 5 (1987)
+39: Extreme Private Eros: Love Song 1974 (1974)
+40: Lost in a Harem (1944)
+41: Susie Q (1996)
+42: Spine Tingler!  The William Castle Story (2007)
+43: Garfield's Fun Fest (2008)
+44: "Stolen Collection
+45: Salam Neighbor (2015)
+46: "Tramp
+47: The Immoral Mr. Teas (1959)
+48: Terra (2015)
+49: Lagerfeld Confidential (2007)
+50: Desierto (2016)
+Benchmark execution time: 702940ms

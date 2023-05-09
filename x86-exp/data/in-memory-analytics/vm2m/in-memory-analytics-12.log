@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8249405217499647 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8211899768836818 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8230585340480013 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8176153134799025 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8173103131409937.
+The best model improves the baseline by 23.26%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: 1 (2014)
+ 4: The Great American Girl Robbery (1979)
+ 5: Fantastic Lies (2016)
+ 6: The Immoral Mr. Teas (1959)
+ 7: The Keepers (2017)
+ 8: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 9: The Story of Asya Klyachina (1966)
+10: The Marquis (2011)
+11: Tintin and the Lake of Sharks (1972)
+12: Sex Is Zero (2002)
+13: Atharintiki Daaredi (2013)
+14: Love Life (2001)
+15: Frankenstein Conquers the World (1965)
+16: Heaven Is a Playground (1991)
+17: Lemonade Mouth (2011)
+18: "Mahabharata
+19: Tiger Orange (2014)
+20: Losing the North (2015)
+21: Love Is Blind (2013)
+22: Punk Vacation (1987)
+23: UFO - Distruggete base Luna! (1971)
+24: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+25: The Prodigies (2011)
+26: Speech & Debate (2017)
+27: More Brains! A Return to the Living Dead (2011)
+28: Monster High: Fright On! (2011)
+29: Daisy Town (1971)
+30: Far Out Man (1990)
+31: PSYCHO-PASS: The Movie (2016)
+32: Scavenger Hunt (1979)
+33: Lost in a Harem (1944)
+34: Rio Diablo (1993)
+35: The Boss's Daughter (2016)
+36: Tr?mulo (2015)
+37: Emmanuelle 5 (1987)
+38: Desierto (2016)
+39: Duplicate (1998)
+40: Mixed Kebab (2012)
+41: "2013 Rock and Roll Hall of Fame Induction Ceremony
+42: Estamos Juntos (2011)
+43: Beltracchi - The Art of the Forgery (2014)
+44: Mad Ron's Prevues from Hell (1987)
+45: Heroes Shed No Tears (1986)
+46: Vampyres (1974)
+47: Susie Q (1996)
+48: Garfield's Fun Fest (2008)
+49: Bad Hair Day (2015)
+50: Mamitas (2011)
+Benchmark execution time: 648242ms

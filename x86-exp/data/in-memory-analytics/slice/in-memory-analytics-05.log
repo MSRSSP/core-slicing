@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8241593141651237 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8221533196473184 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8206208061130498 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8167036722855295 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8164168085524853.
+The best model improves the baseline by 23.34%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Story of Asya Klyachina (1966)
+ 4: The Marquis (2011)
+ 5: Love Life (2001)
+ 6: Tintin and the Lake of Sharks (1972)
+ 7: Atharintiki Daaredi (2013)
+ 8: Estamos Juntos (2011)
+ 9: The Great American Girl Robbery (1979)
+10: Frankenstein Conquers the World (1965)
+11: Sex Is Zero (2002)
+12: Monster High: Fright On! (2011)
+13: Duplicate (1998)
+14: Fantastic Lies (2016)
+15: Heaven Is a Playground (1991)
+16: The Prodigies (2011)
+17: Love Is Blind (2013)
+18: The Immoral Mr. Teas (1959)
+19: "Mahabharata
+20: The Keepers (2017)
+21: More Brains! A Return to the Living Dead (2011)
+22: UFO - Distruggete base Luna! (1971)
+23: Last Day of Summer (2009)
+24: "2013 Rock and Roll Hall of Fame Induction Ceremony
+25: PSYCHO-PASS: The Movie (2016)
+26: Losing the North (2015)
+27: Scavenger Hunt (1979)
+28: "Tramp
+29: Far Out Man (1990)
+30: Farmageddon (2011)
+31: Rio Diablo (1993)
+32: Daisy Town (1971)
+33: The War at Home (1979)
+34: Genius on Hold (2013)
+35: Greg Fitzsimmons: Life on Stage (2013)
+36: Blue Summer (1973)
+37: Tr?mulo (2015)
+38: A Year in Burgundy (2013)
+39: Just Write (1997)
+40: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+41: Here Without Me (Inja bedoone man) (2011)
+42: Garage Olimpo (1999)
+43: Loser Takes All! (Qui perd gagne !) (2003)
+44: Ahora o nunca (2015)
+45: Emmanuelle 5 (1987)
+46: Spine Tingler!  The William Castle Story (2007)
+47: Extreme Private Eros: Love Song 1974 (1974)
+48: Lost in a Harem (1944)
+49: The Spacewalker (2017)
+50: Jeff Dunham: Jeff Dunham's Very Special Christmas Special (2008)
+Benchmark execution time: 704667ms

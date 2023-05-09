@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8236348462499923 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8212760056802391 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8238773713460974 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8171407723331062 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8168857166300659.
+The best model improves the baseline by 23.30%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 4: The Immoral Mr. Teas (1959)
+ 5: The Marquis (2011)
+ 6: Alien Tornado (2012)
+ 7: Tintin and the Lake of Sharks (1972)
+ 8: UFO - Distruggete base Luna! (1971)
+ 9: Duplicate (1998)
+10: The Great American Girl Robbery (1979)
+11: The Prodigies (2011)
+12: Frankenstein Conquers the World (1965)
+13: Heaven Is a Playground (1991)
+14: 1 (2014)
+15: Lemonade Mouth (2011)
+16: Zakochani (2000)
+17: Far Out Man (1990)
+18: Sex Is Zero (2002)
+19: Emmanuelle 5 (1987)
+20: Rio Diablo (1993)
+21: The Keepers (2017)
+22: Here Without Me (Inja bedoone man) (2011)
+23: Estamos Juntos (2011)
+24: Atharintiki Daaredi (2013)
+25: Susie Q (1996)
+26: Heroes Shed No Tears (1986)
+27: Vampyres (1974)
+28: Last Day of Summer (2009)
+29: Lavalantula (2015)
+30: Daisy Town (1971)
+31: More Brains! A Return to the Living Dead (2011)
+32: Monster High: Fright On! (2011)
+33: Varalaru (2006)
+34: PSYCHO-PASS: The Movie (2016)
+35: Fantastic Lies (2016)
+36: "Rage
+37: Swept Under (2015)
+38: "2013 Rock and Roll Hall of Fame Induction Ceremony
+39: Tiger Orange (2014)
+40: Breaking a Monster (2015)
+41: Horrorvision (2001)
+42: The War at Home (1979)
+43: Mamitas (2011)
+44: "Stolen Collection
+45: "Muppet Christmas: Letters to Santa
+46: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+47: Thor: Ragnarok (2017)
+48: Ali Baba Bunny (1957)
+49: The Ties That Bind (2015)
+50: An Interesting Story (1904)
+Benchmark execution time: 689157ms

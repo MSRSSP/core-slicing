@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8212198307703192 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8204343191254202 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8223993072437205 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8169602707891728 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8166916274839681.
+The best model improves the baseline by 23.32%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Marquis (2011)
+ 4: Tintin and the Lake of Sharks (1972)
+ 5: Fantastic Lies (2016)
+ 6: Sex Is Zero (2002)
+ 7: Monster High: Fright On! (2011)
+ 8: Estamos Juntos (2011)
+ 9: Frankenstein Conquers the World (1965)
+10: The Story of Asya Klyachina (1966)
+11: The Prodigies (2011)
+12: Heaven Is a Playground (1991)
+13: Love Life (2001)
+14: Last Day of Summer (2009)
+15: Scavenger Hunt (1979)
+16: Atharintiki Daaredi (2013)
+17: Duplicate (1998)
+18: The Great American Girl Robbery (1979)
+19: The War at Home (1979)
+20: UFO - Distruggete base Luna! (1971)
+21: More Brains! A Return to the Living Dead (2011)
+22: Far Out Man (1990)
+23: Love Is Blind (2013)
+24: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+25: PSYCHO-PASS: The Movie (2016)
+26: The Immoral Mr. Teas (1959)
+27: Here Without Me (Inja bedoone man) (2011)
+28: Prince of Jutland (a.k.a. Royal Deceit) (1994)
+29: Patient Zero (2017)
+30: "Mahabharata
+31: "2013 Rock and Roll Hall of Fame Induction Ceremony
+32: Daisy Town (1971)
+33: Jeff Dunham: Arguing with Myself (2006)
+34: Rio Diablo (1993)
+35: Awara Paagal Deewana (2002)
+36: Emmanuelle 5 (1987)
+37: Lavalantula (2015)
+38: A Year in Burgundy (2013)
+39: Tr?mulo (2015)
+40: The Keepers (2017)
+41: Susie Q (1996)
+42: Jeff Dunham: Jeff Dunham's Very Special Christmas Special (2008)
+43: Terra (2015)
+44: "Stolen Collection
+45: Lemonade Mouth (2011)
+46: Farmageddon (2011)
+47: Richard Jeni: A Big Steaming Pile of Me (2005)
+48: With Great Power: The Stan Lee Story (2012)
+49: "Tramp
+50: Spine Tingler!  The William Castle Story (2007)
+Benchmark execution time: 658024ms

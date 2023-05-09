@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8216692780425672 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8210723673933631 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8215627753139617 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8174266552508814 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.817162518764219.
+The best model improves the baseline by 23.27%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Great American Girl Robbery (1979)
+ 4: The Immoral Mr. Teas (1959)
+ 5: Atharintiki Daaredi (2013)
+ 6: 1 (2014)
+ 7: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 8: The Keepers (2017)
+ 9: Frankenstein Conquers the World (1965)
+10: Tintin and the Lake of Sharks (1972)
+11: Love Life (2001)
+12: The Marquis (2011)
+13: Alien Tornado (2012)
+14: Estamos Juntos (2011)
+15: Sex Is Zero (2002)
+16: Lavalantula (2015)
+17: Heaven Is a Playground (1991)
+18: The Story of Asya Klyachina (1966)
+19: The Prodigies (2011)
+20: UFO - Distruggete base Luna! (1971)
+21: Losing the North (2015)
+22: Lemonade Mouth (2011)
+23: Punk Vacation (1987)
+24: Tiger Orange (2014)
+25: Emmanuelle 5 (1987)
+26: PSYCHO-PASS: The Movie (2016)
+27: Monster High: Fright On! (2011)
+28: Love Is Blind (2013)
+29: Far Out Man (1990)
+30: Shock Head Soul (2011)
+31: More Brains! A Return to the Living Dead (2011)
+32: Daisy Town (1971)
+33: Rio Diablo (1993)
+34: Duplicate (1998)
+35: "Mahabharata
+36: Fantastic Lies (2016)
+37: Lost in a Harem (1944)
+38: Last Day of Summer (2009)
+39: Heroes Shed No Tears (1986)
+40: Vampyres (1974)
+41: Zakochani (2000)
+42: Stalled (2013)
+43: "Stolen Collection
+44: Don't You Forget About Me (2009)
+45: Mad Ron's Prevues from Hell (1987)
+46: The Ties That Bind (2015)
+47: Rasputin (1996)
+48: Susie Q (1996)
+49: Mamitas (2011)
+50: Swept Under (2015)
+Benchmark execution time: 753384ms

@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8194937481021418 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8209175563779264 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.823430919929602 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8172210703756537 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.816911865960337.
+The best model improves the baseline by 23.30%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 4: Love Life (2001)
+ 5: The Marquis (2011)
+ 6: Tintin and the Lake of Sharks (1972)
+ 7: The Immoral Mr. Teas (1959)
+ 8: The Great American Girl Robbery (1979)
+ 9: The Keepers (2017)
+10: Alien Tornado (2012)
+11: Heaven Is a Playground (1991)
+12: Fantastic Lies (2016)
+13: Frankenstein Conquers the World (1965)
+14: The Prodigies (2011)
+15: Lavalantula (2015)
+16: Lilian's Story (1995)
+17: Sex Is Zero (2002)
+18: Estamos Juntos (2011)
+19: UFO - Distruggete base Luna! (1971)
+20: Lemonade Mouth (2011)
+21: 1 (2014)
+22: Rio Diablo (1993)
+23: Monster High: Fright On! (2011)
+24: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+25: Far Out Man (1990)
+26: Emmanuelle 5 (1987)
+27: Duplicate (1998)
+28: Atharintiki Daaredi (2013)
+29: More Brains! A Return to the Living Dead (2011)
+30: Scavenger Hunt (1979)
+31: PSYCHO-PASS: The Movie (2016)
+32: Heroes Shed No Tears (1986)
+33: Vampyres (1974)
+34: "Mahabharata
+35: Susie Q (1996)
+36: Swept Under (2015)
+37: Zakochani (2000)
+38: Just Write (1997)
+39: Daisy Town (1971)
+40: "2013 Rock and Roll Hall of Fame Induction Ceremony
+41: Steal This Film II (2007)
+42: Horrorvision (2001)
+43: "Rage
+44: Tiger Orange (2014)
+45: Beltracchi - The Art of the Forgery (2014)
+46: "Stolen Collection
+47: Losing the North (2015)
+48: Ali Baba Bunny (1957)
+49: Farmageddon (2011)
+50: The Harmony Game (2011)
+Benchmark execution time: 715718ms

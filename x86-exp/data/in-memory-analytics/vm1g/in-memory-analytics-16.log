@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8212006075717769 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8212687775692298 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8185708531282949 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8172964701484808 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8169773343638497.
+The best model improves the baseline by 23.29%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Story of Asya Klyachina (1966)
+ 4: The Great American Girl Robbery (1979)
+ 5: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 6: Love Life (2001)
+ 7: The Keepers (2017)
+ 8: Atharintiki Daaredi (2013)
+ 9: Alien Tornado (2012)
+10: The Marquis (2011)
+11: Tintin and the Lake of Sharks (1972)
+12: The Immoral Mr. Teas (1959)
+13: Mamitas (2011)
+14: Heaven Is a Playground (1991)
+15: UFO - Distruggete base Luna! (1971)
+16: Love Is Blind (2013)
+17: PSYCHO-PASS: The Movie (2016)
+18: Lemonade Mouth (2011)
+19: The Prodigies (2011)
+20: Losing the North (2015)
+21: More Brains! A Return to the Living Dead (2011)
+22: Rio Diablo (1993)
+23: 1 (2014)
+24: Lost in a Harem (1944)
+25: Frankenstein Conquers the World (1965)
+26: Punk Vacation (1987)
+27: Far Out Man (1990)
+28: Emmanuelle 5 (1987)
+29: Sex Is Zero (2002)
+30: "Mahabharata
+31: Don't You Forget About Me (2009)
+32: Desierto (2016)
+33: Estamos Juntos (2011)
+34: Tr?mulo (2015)
+35: Daisy Town (1971)
+36: Tiger Orange (2014)
+37: The Ties That Bind (2015)
+38: Ali Baba Bunny (1957)
+39: Last Day of Summer (2009)
+40: "Stolen Collection
+41: Garfield's Fun Fest (2008)
+42: Drive (1997)
+43: Kokoko (2012)
+44: The Perfect Guy (2015)
+45: Company (2002)
+46: "2013 Rock and Roll Hall of Fame Induction Ceremony
+47: Susie Q (1996)
+48: My Super Psycho Sweet 16 (2009)
+49: Spoiler (1998)
+50: Lagerfeld Confidential (2007)
+Benchmark execution time: 766040ms

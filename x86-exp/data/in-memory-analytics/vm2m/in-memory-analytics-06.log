@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8209528863048814 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8215262524633853 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.816743356580861 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8171062246409715 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 10, and its RMSE on the test set is 0.8165380692674169.
+The best model improves the baseline by 23.33%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Fantastic Lies (2016)
+ 3: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 4: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 5: Atharintiki Daaredi (2013)
+ 6: The Marquis (2011)
+ 7: Heaven Is a Playground (1991)
+ 8: The Keepers (2017)
+ 9: Sex Is Zero (2002)
+10: Tintin and the Lake of Sharks (1972)
+11: Heroes Shed No Tears (1986)
+12: Vampyres (1974)
+13: Emmanuelle 5 (1987)
+14: Love Life (2001)
+15: Scavenger Hunt (1979)
+16: The Immoral Mr. Teas (1959)
+17: Frankenstein Conquers the World (1965)
+18: The Prodigies (2011)
+19: The Great American Girl Robbery (1979)
+20: The Story of Asya Klyachina (1966)
+21: "Mahabharata
+22: High Risk (1981)
+23: Here Without Me (Inja bedoone man) (2011)
+24: Richard Jeni: A Big Steaming Pile of Me (2005)
+25: Far Out Man (1990)
+26: Daisy Town (1971)
+27: Rio Diablo (1993)
+28: Jeff Dunham: Arguing with Myself (2006)
+29: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+30: Awara Paagal Deewana (2002)
+31: Ali Baba Bunny (1957)
+32: Monster High: Fright On! (2011)
+33: The Sound of Music Live (2013)
+34: The War at Home (1979)
+35: UFO - Distruggete base Luna! (1971)
+36: Mixed Kebab (2012)
+37: Farmageddon (2011)
+38: More Brains! A Return to the Living Dead (2011)
+39: The Spacewalker (2017)
+40: Texas - Doc Snyder h?lt die Welt in Atem (1993)
+41: Estamos Juntos (2011)
+42: Susie Q (1996)
+43: Lemonade Mouth (2011)
+44: Tom Petty and the Heartbreakers: Runnin' Down a Dream (2007)
+45: Jimmy Carr: Being Funny (2011)
+46: Garfield's Fun Fest (2008)
+47: Jimmy Carr: Stand Up (2005)
+48: Patient Zero (2017)
+49: Runaway Brain (1995) 
+50: Duchess and the Dirtwater Fox (1976)
+Benchmark execution time: 765225ms

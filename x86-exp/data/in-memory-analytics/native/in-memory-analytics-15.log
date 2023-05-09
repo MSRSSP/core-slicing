@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8230937861055979 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8207305299696439 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.821917211357599 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8171716789704557 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.81689859609569.
+The best model improves the baseline by 23.30%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: 1 (2014)
+ 4: The Keepers (2017)
+ 5: The Great American Girl Robbery (1979)
+ 6: Love Life (2001)
+ 7: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 8: The Marquis (2011)
+ 9: Tintin and the Lake of Sharks (1972)
+10: Atharintiki Daaredi (2013)
+11: Frankenstein Conquers the World (1965)
+12: Sex Is Zero (2002)
+13: The Immoral Mr. Teas (1959)
+14: Heaven Is a Playground (1991)
+15: Patient Zero (2017)
+16: Loser Takes All! (Qui perd gagne !) (2003)
+17: Lemonade Mouth (2011)
+18: More Brains! A Return to the Living Dead (2011)
+19: Lavalantula (2015)
+20: Alien Tornado (2012)
+21: "Mahabharata
+22: Just Write (1997)
+23: Lost in a Harem (1944)
+24: PSYCHO-PASS: The Movie (2016)
+25: Love Is Blind (2013)
+26: Punk Vacation (1987)
+27: Rio Diablo (1993)
+28: Monster High: Fright On! (2011)
+29: Far Out Man (1990)
+30: UFO - Distruggete base Luna! (1971)
+31: Mixed Kebab (2012)
+32: The Story of Asya Klyachina (1966)
+33: The Prodigies (2011)
+34: The Spacewalker (2017)
+35: Daisy Town (1971)
+36: Fantastic Lies (2016)
+37: Heroes Shed No Tears (1986)
+38: Vampyres (1974)
+39: Kokoko (2012)
+40: Tr?mulo (2015)
+41: Mamitas (2011)
+42: Losing the North (2015)
+43: Estamos Juntos (2011)
+44: Emmanuelle 5 (1987)
+45: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+46: Desierto (2016)
+47: Seven Dwarfs (2004)
+48: A Year in Burgundy (2013)
+49: Lagerfeld Confidential (2007)
+50: The Perfect Guy (2015)
+Benchmark execution time: 770530ms

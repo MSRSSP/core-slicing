@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.821337178132571 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8217502525071912 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8184476587873044 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8168587346771723 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8165763397126666.
+The best model improves the baseline by 23.33%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Immoral Mr. Teas (1959)
+ 4: The Great American Girl Robbery (1979)
+ 5: Fantastic Lies (2016)
+ 6: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 7: The Marquis (2011)
+ 8: Tintin and the Lake of Sharks (1972)
+ 9: Estamos Juntos (2011)
+10: The Story of Asya Klyachina (1966)
+11: The Keepers (2017)
+12: Heaven Is a Playground (1991)
+13: Frankenstein Conquers the World (1965)
+14: Sex Is Zero (2002)
+15: Monster High: Fright On! (2011)
+16: Love Life (2001)
+17: Love Is Blind (2013)
+18: PSYCHO-PASS: The Movie (2016)
+19: The Prodigies (2011)
+20: Lemonade Mouth (2011)
+21: Atharintiki Daaredi (2013)
+22: 1 (2014)
+23: UFO - Distruggete base Luna! (1971)
+24: More Brains! A Return to the Living Dead (2011)
+25: Far Out Man (1990)
+26: Rio Diablo (1993)
+27: "Mahabharata
+28: "2013 Rock and Roll Hall of Fame Induction Ceremony
+29: Last Day of Summer (2009)
+30: Alien Tornado (2012)
+31: Duplicate (1998)
+32: Daisy Town (1971)
+33: Tiger Orange (2014)
+34: Mamitas (2011)
+35: Lavalantula (2015)
+36: Susie Q (1996)
+37: Losing the North (2015)
+38: Beltracchi - The Art of the Forgery (2014)
+39: Tr?mulo (2015)
+40: "Muppet Christmas: Letters to Santa
+41: "Stolen Collection
+42: Heroes Shed No Tears (1986)
+43: Vampyres (1974)
+44: Hatchet III (2013)
+45: Emmanuelle 5 (1987)
+46: Farmageddon (2011)
+47: Extreme Private Eros: Love Song 1974 (1974)
+48: Lost in a Harem (1944)
+49: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+50: Seven Dwarfs (2004)
+Benchmark execution time: 699365ms

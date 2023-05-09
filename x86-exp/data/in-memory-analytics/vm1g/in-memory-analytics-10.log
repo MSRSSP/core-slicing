@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8210408291766407 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8214055751136777 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8218780910275685 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8163776028647064 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8161009334966465.
+The best model improves the baseline by 23.37%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: 1 (2014)
+ 4: The Marquis (2011)
+ 5: Sex Is Zero (2002)
+ 6: Tintin and the Lake of Sharks (1972)
+ 7: Atharintiki Daaredi (2013)
+ 8: Fantastic Lies (2016)
+ 9: The Immoral Mr. Teas (1959)
+10: Frankenstein Conquers the World (1965)
+11: Love Life (2001)
+12: The Great American Girl Robbery (1979)
+13: Heaven Is a Playground (1991)
+14: The Keepers (2017)
+15: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+16: Estamos Juntos (2011)
+17: The Prodigies (2011)
+18: Lavalantula (2015)
+19: Lemonade Mouth (2011)
+20: Monster High: Fright On! (2011)
+21: UFO - Distruggete base Luna! (1971)
+22: More Brains! A Return to the Living Dead (2011)
+23: Far Out Man (1990)
+24: Duplicate (1998)
+25: PSYCHO-PASS: The Movie (2016)
+26: Patient Zero (2017)
+27: "Mahabharata
+28: The War at Home (1979)
+29: Daisy Town (1971)
+30: Rio Diablo (1993)
+31: Heroes Shed No Tears (1986)
+32: Vampyres (1974)
+33: Last Day of Summer (2009)
+34: Emmanuelle 5 (1987)
+35: Scavenger Hunt (1979)
+36: "2013 Rock and Roll Hall of Fame Induction Ceremony
+37: Jeff Dunham: Arguing with Myself (2006)
+38: Susie Q (1996)
+39: With Great Power: The Stan Lee Story (2012)
+40: Shock Head Soul (2011)
+41: Farmageddon (2011)
+42: "Stolen Collection
+43: Tiger Orange (2014)
+44: Tr?mulo (2015)
+45: Foo Fighters: Back and Forth (2011)
+46: Just Write (1997)
+47: Alien Tornado (2012)
+48: Losing the North (2015)
+49: Mixed Kebab (2012)
+50: Love Is Blind (2013)
+Benchmark execution time: 729646ms

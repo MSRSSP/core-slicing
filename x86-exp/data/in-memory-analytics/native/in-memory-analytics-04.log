@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8265405925550241 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8205677598557427 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8191191848556489 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8176752908679447 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8173931361687125.
+The best model improves the baseline by 23.25%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Great American Girl Robbery (1979)
+ 4: Fantastic Lies (2016)
+ 5: Atharintiki Daaredi (2013)
+ 6: The Keepers (2017)
+ 7: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 8: Tintin and the Lake of Sharks (1972)
+ 9: The Immoral Mr. Teas (1959)
+10: The Marquis (2011)
+11: 1 (2014)
+12: Love Life (2001)
+13: Heaven Is a Playground (1991)
+14: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+15: The Story of Asya Klyachina (1966)
+16: Sex Is Zero (2002)
+17: Frankenstein Conquers the World (1965)
+18: Patient Zero (2017)
+19: Love Is Blind (2013)
+20: PSYCHO-PASS: The Movie (2016)
+21: More Brains! A Return to the Living Dead (2011)
+22: Alien Tornado (2012)
+23: Monster High: Fright On! (2011)
+24: Estamos Juntos (2011)
+25: "Mahabharata
+26: The Prodigies (2011)
+27: Duplicate (1998)
+28: Rio Diablo (1993)
+29: Lemonade Mouth (2011)
+30: Tiger Orange (2014)
+31: Beltracchi - The Art of the Forgery (2014)
+32: UFO - Distruggete base Luna! (1971)
+33: Emmanuelle 5 (1987)
+34: Lavalantula (2015)
+35: Ali Baba Bunny (1957)
+36: Far Out Man (1990)
+37: Steal This Film II (2007)
+38: "2013 Rock and Roll Hall of Fame Induction Ceremony
+39: Losing the North (2015)
+40: Tr?mulo (2015)
+41: Last Day of Summer (2009)
+42: Here Without Me (Inja bedoone man) (2011)
+43: Swept Under (2015)
+44: Desierto (2016)
+45: Daisy Town (1971)
+46: Just Write (1997)
+47: Zakochani (2000)
+48: Susie Q (1996)
+49: Farmageddon (2011)
+50: Bugcrush (2006)
+Benchmark execution time: 754624ms

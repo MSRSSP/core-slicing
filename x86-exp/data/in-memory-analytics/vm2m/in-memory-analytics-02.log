@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8219419103475742 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8206634071033683 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8174780890898418 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8181983165781788 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 10, and its RMSE on the test set is 0.8172594844975806.
+The best model improves the baseline by 23.26%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: Atharintiki Daaredi (2013)
+ 4: Fantastic Lies (2016)
+ 5: The Marquis (2011)
+ 6: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 7: Tintin and the Lake of Sharks (1972)
+ 8: Sex Is Zero (2002)
+ 9: The Keepers (2017)
+10: Frankenstein Conquers the World (1965)
+11: Heaven Is a Playground (1991)
+12: 1 (2014)
+13: Monster High: Fright On! (2011)
+14: The Great American Girl Robbery (1979)
+15: The Prodigies (2011)
+16: UFO - Distruggete base Luna! (1971)
+17: More Brains! A Return to the Living Dead (2011)
+18: Duplicate (1998)
+19: Estamos Juntos (2011)
+20: "Mahabharata
+21: Love Life (2001)
+22: Far Out Man (1990)
+23: Lavalantula (2015)
+24: Emmanuelle 5 (1987)
+25: Jeff Dunham: Arguing with Myself (2006)
+26: Lost in a Harem (1944)
+27: Heroes Shed No Tears (1986)
+28: Vampyres (1974)
+29: Last Day of Summer (2009)
+30: PSYCHO-PASS: The Movie (2016)
+31: Rio Diablo (1993)
+32: Mixed Kebab (2012)
+33: Prince of Jutland (a.k.a. Royal Deceit) (1994)
+34: Don't You Forget About Me (2009)
+35: Daisy Town (1971)
+36: "Stolen Collection
+37: Rasputin (1996)
+38: Patient Zero (2017)
+39: Love Is Blind (2013)
+40: The Story of Asya Klyachina (1966)
+41: Losing the North (2015)
+42: Here Without Me (Inja bedoone man) (2011)
+43: Garage Olimpo (1999)
+44: "2013 Rock and Roll Hall of Fame Induction Ceremony
+45: An Interesting Story (1904)
+46: Jeff Dunham: Jeff Dunham's Very Special Christmas Special (2008)
+47: Scooby-Doo! Frankencreepy (2014)
+48: With Great Power: The Stan Lee Story (2012)
+49: Mean Guns (1997)
+50: Lemonade Mouth (2011)
+Benchmark execution time: 710974ms

@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8229942466814923 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8214162608817572 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8179071937759567 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8179945719150317 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 10, and its RMSE on the test set is 0.8176087562660774.
+The best model improves the baseline by 23.23%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: The Story of Asya Klyachina (1966)
+ 3: 1 (2014)
+ 4: The Great American Girl Robbery (1979)
+ 5: Love Life (2001)
+ 6: The Keepers (2017)
+ 7: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 8: Tintin and the Lake of Sharks (1972)
+ 9: The Marquis (2011)
+10: The Immoral Mr. Teas (1959)
+11: "Mahabharata
+12: Heaven Is a Playground (1991)
+13: Jellyfish Eyes (2013)
+14: Special Section (1975)
+15: Estamos Juntos (2011)
+16: The Prodigies (2011)
+17: Emmanuelle 5 (1987)
+18: Sex Is Zero (2002)
+19: Prince of Jutland (a.k.a. Royal Deceit) (1994)
+20: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+21: Loser Takes All! (Qui perd gagne !) (2003)
+22: It Runs in the Family (My Summer Story) (1994)
+23: Fantastic Lies (2016)
+24: Love Is Blind (2013)
+25: Frankenstein Conquers the World (1965)
+26: Emanuelle in Egypt (Velluto nero) (1976)
+27: PSYCHO-PASS: The Movie (2016)
+28: Jeff Dunham: Arguing with Myself (2006)
+29: Rio Diablo (1993)
+30: Lost in a Harem (1944)
+31: Atharintiki Daaredi (2013)
+32: Far Out Man (1990)
+33: Daisy Town (1971)
+34: High Risk (1981)
+35: UFO - Distruggete base Luna! (1971)
+36: Mixed Kebab (2012)
+37: Trudell (2005)
+38: Punk Vacation (1987)
+39: More Brains! A Return to the Living Dead (2011)
+40: "Frozen North
+41: Lemonade Mouth (2011)
+42: The Boss's Daughter (2016)
+43: Just Write (1997)
+44: The Kids Are Alright (1979)
+45: The Spacewalker (2017)
+46: Alien Tornado (2012)
+47: Here Without Me (Inja bedoone man) (2011)
+48: Garage Olimpo (1999)
+49: Lavalantula (2015)
+50: Farmageddon (2011)
+Benchmark execution time: 768526ms

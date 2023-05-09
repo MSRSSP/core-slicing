@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8197225226499444 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8212725836840081 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8187780881244389 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.816963053230818 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8166668892687463.
+The best model improves the baseline by 23.32%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: 1 (2014)
+ 3: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 4: The Keepers (2017)
+ 5: Atharintiki Daaredi (2013)
+ 6: Love Life (2001)
+ 7: The Great American Girl Robbery (1979)
+ 8: Sex Is Zero (2002)
+ 9: The Marquis (2011)
+10: Fantastic Lies (2016)
+11: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+12: Frankenstein Conquers the World (1965)
+13: Tintin and the Lake of Sharks (1972)
+14: Heaven Is a Playground (1991)
+15: Scavenger Hunt (1979)
+16: The Immoral Mr. Teas (1959)
+17: Mixed Kebab (2012)
+18: "Mahabharata
+19: Estamos Juntos (2011)
+20: More Brains! A Return to the Living Dead (2011)
+21: The Prodigies (2011)
+22: Love Is Blind (2013)
+23: Just Write (1997)
+24: Patient Zero (2017)
+25: Desierto (2016)
+26: PSYCHO-PASS: The Movie (2016)
+27: Lemonade Mouth (2011)
+28: UFO - Distruggete base Luna! (1971)
+29: "2013 Rock and Roll Hall of Fame Induction Ceremony
+30: Far Out Man (1990)
+31: Lost in a Harem (1944)
+32: Tr?mulo (2015)
+33: Loser Takes All! (Qui perd gagne !) (2003)
+34: Daisy Town (1971)
+35: Bugcrush (2006)
+36: Rio Diablo (1993)
+37: Salam Neighbor (2015)
+38: Losing the North (2015)
+39: "Tripper
+40: Punk Vacation (1987)
+41: The War at Home (1979)
+42: The Story of Asya Klyachina (1966)
+43: Monster High: Fright On! (2011)
+44: Mamitas (2011)
+45: Duplicate (1998)
+46: Lagerfeld Confidential (2007)
+47: Farmageddon (2011)
+48: Ali Baba Bunny (1957)
+49: Spoiler (1998)
+50: The Unauthorized Saved by the Bell Story (2014)
+Benchmark execution time: 690503ms

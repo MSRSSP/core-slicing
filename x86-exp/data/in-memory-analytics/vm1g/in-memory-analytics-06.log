@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8212675756599614 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.821833636692468 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8231545755690364 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8171515357416933 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8168742886222053.
+The best model improves the baseline by 23.30%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Marquis (2011)
+ 4: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 5: The Great American Girl Robbery (1979)
+ 6: 1 (2014)
+ 7: Alien Tornado (2012)
+ 8: The Immoral Mr. Teas (1959)
+ 9: Frankenstein Conquers the World (1965)
+10: Tintin and the Lake of Sharks (1972)
+11: Love Life (2001)
+12: Monster High: Fright On! (2011)
+13: The Keepers (2017)
+14: Heaven Is a Playground (1991)
+15: Atharintiki Daaredi (2013)
+16: Sex Is Zero (2002)
+17: Lavalantula (2015)
+18: The Sound of Music Live (2013)
+19: Rio Diablo (1993)
+20: Estamos Juntos (2011)
+21: The Prodigies (2011)
+22: Far Out Man (1990)
+23: Mamitas (2011)
+24: UFO - Distruggete base Luna! (1971)
+25: Patient Zero (2017)
+26: More Brains! A Return to the Living Dead (2011)
+27: Scavenger Hunt (1979)
+28: The War at Home (1979)
+29: "Mahabharata
+30: Daisy Town (1971)
+31: Here Without Me (Inja bedoone man) (2011)
+32: PSYCHO-PASS: The Movie (2016)
+33: Seven Dwarfs (2004)
+34: Extreme Private Eros: Love Song 1974 (1974)
+35: Susie Q (1996)
+36: God?s Wedding (As Bodas de Deus) (1999)
+37: Don't You Forget About Me (2009)
+38: "2013 Rock and Roll Hall of Fame Induction Ceremony
+39: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+40: Pulsar (2011)
+41: Emmanuelle 5 (1987)
+42: Manhattan Romance (2015)
+43: Provocateur (1998)
+44: "Stolen Collection
+45: Last Day of Summer (2009)
+46: Hatchet III (2013)
+47: The Emperor in August (2015)
+48: With Great Power: The Stan Lee Story (2012)
+49: Lemonade Mouth (2011)
+50: Even Angels Eat Beans (1973)
+Benchmark execution time: 730936ms

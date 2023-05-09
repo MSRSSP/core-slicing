@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8212308685064245 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8205250356965642 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8201615786559664 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8173087248382676 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8170262973540461.
+The best model improves the baseline by 23.29%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Story of Asya Klyachina (1966)
+ 4: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 5: The Great American Girl Robbery (1979)
+ 6: The Keepers (2017)
+ 7: Love Life (2001)
+ 8: The Immoral Mr. Teas (1959)
+ 9: The Marquis (2011)
+10: Tintin and the Lake of Sharks (1972)
+11: 1 (2014)
+12: Atharintiki Daaredi (2013)
+13: Sex Is Zero (2002)
+14: Kokoko (2012)
+15: Alien Tornado (2012)
+16: Heaven Is a Playground (1991)
+17: The Boss's Daughter (2016)
+18: The Prodigies (2011)
+19: More Brains! A Return to the Living Dead (2011)
+20: Frankenstein Conquers the World (1965)
+21: Love Is Blind (2013)
+22: Lavalantula (2015)
+23: Fantastic Lies (2016)
+24: Rio Diablo (1993)
+25: UFO - Distruggete base Luna! (1971)
+26: PSYCHO-PASS: The Movie (2016)
+27: Just Write (1997)
+28: Lemonade Mouth (2011)
+29: Monster High: Fright On! (2011)
+30: "Mahabharata
+31: "2013 Rock and Roll Hall of Fame Induction Ceremony
+32: Mixed Kebab (2012)
+33: Patient Zero (2017)
+34: Far Out Man (1990)
+35: Here Without Me (Inja bedoone man) (2011)
+36: Zakochani (2000)
+37: Ali Baba Bunny (1957)
+38: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+39: Tr?mulo (2015)
+40: Tiger Orange (2014)
+41: Daisy Town (1971)
+42: Desierto (2016)
+43: Susie Q (1996)
+44: Losing the North (2015)
+45: Emmanuelle 5 (1987)
+46: Last Day of Summer (2009)
+47: "Stolen Collection
+48: Duplicate (1998)
+49: Salam Neighbor (2015)
+50: Jellyfish Eyes (2013)
+Benchmark execution time: 780334ms

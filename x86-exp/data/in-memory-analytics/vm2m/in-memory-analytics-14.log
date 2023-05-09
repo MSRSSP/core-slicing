@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8214311036897711 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8212062687518912 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.817380000963429 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8179926747964714 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 10, and its RMSE on the test set is 0.8171475695480216.
+The best model improves the baseline by 23.28%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Emmanuelle 5 (1987)
+ 3: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 4: High Risk (1981)
+ 5: Tintin and the Lake of Sharks (1972)
+ 6: Monster High: Fright On! (2011)
+ 7: The Marquis (2011)
+ 8: Jaane Tu... Ya Jaane Na (2008)
+ 9: Heaven Is a Playground (1991)
+10: Scavenger Hunt (1979)
+11: It Runs in the Family (My Summer Story) (1994)
+12: Richard Jeni: A Big Steaming Pile of Me (2005)
+13: Estamos Juntos (2011)
+14: Heroes Shed No Tears (1986)
+15: Vampyres (1974)
+16: Pardon Us (1931)
+17: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+18: Love Life (2001)
+19: The Immoral Mr. Teas (1959)
+20: Emanuelle in Egypt (Velluto nero) (1976)
+21: The Prodigies (2011)
+22: Lemonade Mouth (2011)
+23: Frankenstein Conquers the World (1965)
+24: Punk Vacation (1987)
+25: The Great American Girl Robbery (1979)
+26: Far Out Man (1990)
+27: Pulling John (2009)
+28: The Kids Are Alright (1979)
+29: Sins (1986)
+30: London Conspiracy (1974)
+31: Susie Q (1996)
+32: Prince of Jutland (a.k.a. Royal Deceit) (1994)
+33: Rio Diablo (1993)
+34: Drive (1997)
+35: Ahora o nunca (2015)
+36: UFO - Distruggete base Luna! (1971)
+37: "Mahabharata
+38: Ghoulies III: Ghoulies Go to College (1991)
+39: Last Day of Summer (2009)
+40: Loser Takes All! (Qui perd gagne !) (2003)
+41: Daisy Town (1971)
+42: Duchess and the Dirtwater Fox (1976)
+43: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+44: Evilenko (2004)
+45: Beltracchi - The Art of the Forgery (2014)
+46: Losing the North (2015)
+47: "Frozen North
+48: An Interesting Story (1904)
+49: Change of Plans (Le code a chang?) (2009)
+50: Duplicate (1998)
+Benchmark execution time: 635297ms

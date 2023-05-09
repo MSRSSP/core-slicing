@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8216975870501143 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8218512980771864 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.819763197825887 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8169094440790067 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8166499899574964.
+The best model improves the baseline by 23.32%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: The Great American Girl Robbery (1979)
+ 4: Atharintiki Daaredi (2013)
+ 5: Tintin and the Lake of Sharks (1972)
+ 6: 1 (2014)
+ 7: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 8: Sex Is Zero (2002)
+ 9: The Marquis (2011)
+10: Fantastic Lies (2016)
+11: The Immoral Mr. Teas (1959)
+12: Estamos Juntos (2011)
+13: Love Life (2001)
+14: The Keepers (2017)
+15: Frankenstein Conquers the World (1965)
+16: The Prodigies (2011)
+17: Heaven Is a Playground (1991)
+18: Monster High: Fright On! (2011)
+19: PSYCHO-PASS: The Movie (2016)
+20: "Mahabharata
+21: Love Is Blind (2013)
+22: More Brains! A Return to the Living Dead (2011)
+23: Lemonade Mouth (2011)
+24: Patient Zero (2017)
+25: The Story of Asya Klyachina (1966)
+26: Lavalantula (2015)
+27: UFO - Distruggete base Luna! (1971)
+28: Far Out Man (1990)
+29: Losing the North (2015)
+30: Emmanuelle 5 (1987)
+31: Daisy Town (1971)
+32: Rio Diablo (1993)
+33: Beltracchi - The Art of the Forgery (2014)
+34: Punk Vacation (1987)
+35: Last Day of Summer (2009)
+36: Jeff Dunham: Arguing with Myself (2006)
+37: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+38: A Year in Burgundy (2013)
+39: Lost in a Harem (1944)
+40: Here Without Me (Inja bedoone man) (2011)
+41: Susie Q (1996)
+42: Tiger Orange (2014)
+43: Jeff Dunham: Jeff Dunham's Very Special Christmas Special (2008)
+44: "2013 Rock and Roll Hall of Fame Induction Ceremony
+45: Scavenger Hunt (1979)
+46: "Stolen Collection
+47: Farmageddon (2011)
+48: Just Write (1997)
+49: Tr?mulo (2015)
+50: Mixed Kebab (2012)
+Benchmark execution time: 738268ms

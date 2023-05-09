@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8235309741707755 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8211275465419201 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8221652794697627 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8167794297980606 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8164978685609415.
+The best model improves the baseline by 23.34%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: Atharintiki Daaredi (2013)
+ 4: The Marquis (2011)
+ 5: The Great American Girl Robbery (1979)
+ 6: Tintin and the Lake of Sharks (1972)
+ 7: Sex Is Zero (2002)
+ 8: 1 (2014)
+ 9: The Story of Asya Klyachina (1966)
+10: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+11: Frankenstein Conquers the World (1965)
+12: The Keepers (2017)
+13: Heaven Is a Playground (1991)
+14: Monster High: Fright On! (2011)
+15: Fantastic Lies (2016)
+16: Scavenger Hunt (1979)
+17: Estamos Juntos (2011)
+18: Love Is Blind (2013)
+19: "Mahabharata
+20: Losing the North (2015)
+21: Patient Zero (2017)
+22: "2013 Rock and Roll Hall of Fame Induction Ceremony
+23: More Brains! A Return to the Living Dead (2011)
+24: The Immoral Mr. Teas (1959)
+25: UFO - Distruggete base Luna! (1971)
+26: The Prodigies (2011)
+27: PSYCHO-PASS: The Movie (2016)
+28: Lost in a Harem (1944)
+29: Mamitas (2011)
+30: Last Day of Summer (2009)
+31: Far Out Man (1990)
+32: Rio Diablo (1993)
+33: Daisy Town (1971)
+34: Jeff Dunham: Arguing with Myself (2006)
+35: Salam Neighbor (2015)
+36: Tr?mulo (2015)
+37: Spine Tingler!  The William Castle Story (2007)
+38: Don't You Forget About Me (2009)
+39: Speech & Debate (2017)
+40: Duplicate (1998)
+41: The War at Home (1979)
+42: Emmanuelle 5 (1987)
+43: Jeff Dunham: Jeff Dunham's Very Special Christmas Special (2008)
+44: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+45: Here Without Me (Inja bedoone man) (2011)
+46: Lavalantula (2015)
+47: Desierto (2016)
+48: A Year in Burgundy (2013)
+49: Farmageddon (2011)
+50: Extreme Private Eros: Love Song 1974 (1974)
+Benchmark execution time: 617590ms

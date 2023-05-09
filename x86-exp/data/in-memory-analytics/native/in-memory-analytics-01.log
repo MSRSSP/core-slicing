@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8223195843103025 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8214268292535007 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8173736693821614 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8177644333649114 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 10, and its RMSE on the test set is 0.8170901949711444.
+The best model improves the baseline by 23.28%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: Fantastic Lies (2016)
+ 4: The Immoral Mr. Teas (1959)
+ 5: The Keepers (2017)
+ 6: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 7: Atharintiki Daaredi (2013)
+ 8: The Marquis (2011)
+ 9: Love Life (2001)
+10: Tintin and the Lake of Sharks (1972)
+11: The Great American Girl Robbery (1979)
+12: Heaven Is a Playground (1991)
+13: Frankenstein Conquers the World (1965)
+14: Monster High: Fright On! (2011)
+15: Sex Is Zero (2002)
+16: Lavalantula (2015)
+17: Lemonade Mouth (2011)
+18: More Brains! A Return to the Living Dead (2011)
+19: Alien Tornado (2012)
+20: Rio Diablo (1993)
+21: Far Out Man (1990)
+22: Emmanuelle 5 (1987)
+23: UFO - Distruggete base Luna! (1971)
+24: Evilenko (2004)
+25: The Prodigies (2011)
+26: The Story of Asya Klyachina (1966)
+27: Mamitas (2011)
+28: PSYCHO-PASS: The Movie (2016)
+29: Love Is Blind (2013)
+30: Mixed Kebab (2012)
+31: Losing the North (2015)
+32: Estamos Juntos (2011)
+33: Heroes Shed No Tears (1986)
+34: Vampyres (1974)
+35: "2013 Rock and Roll Hall of Fame Induction Ceremony
+36: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+37: Zakochani (2000)
+38: Susie Q (1996)
+39: Ali Baba Bunny (1957)
+40: "Mahabharata
+41: Last Day of Summer (2009)
+42: Farmageddon (2011)
+43: Daisy Town (1971)
+44: Tr?mulo (2015)
+45: "Muppet Christmas: Letters to Santa
+46: Lost in a Harem (1944)
+47: "Passion of Ayn Rand
+48: The Spacewalker (2017)
+49: Horrorvision (2001)
+50: Just Write (1997)
+Benchmark execution time: 714299ms

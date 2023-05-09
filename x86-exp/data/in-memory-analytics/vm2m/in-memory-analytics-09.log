@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8198712393705183 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8213893272491338 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8197530926852002 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8172669089721537 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8169623767375495.
+The best model improves the baseline by 23.29%.
+Movies recommended for you:
+ 1: Hamoun (1990)
+ 2: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 3: Atharintiki Daaredi (2013)
+ 4: The Great American Girl Robbery (1979)
+ 5: The Keepers (2017)
+ 6: The Marquis (2011)
+ 7: Tintin and the Lake of Sharks (1972)
+ 8: The Story of Asya Klyachina (1966)
+ 9: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+10: Love Life (2001)
+11: Sex Is Zero (2002)
+12: Heaven Is a Playground (1991)
+13: Patient Zero (2017)
+14: "Mahabharata
+15: 1 (2014)
+16: Love Is Blind (2013)
+17: More Brains! A Return to the Living Dead (2011)
+18: Monster High: Fright On! (2011)
+19: The Immoral Mr. Teas (1959)
+20: "2013 Rock and Roll Hall of Fame Induction Ceremony
+21: Fantastic Lies (2016)
+22: The Prodigies (2011)
+23: Mamitas (2011)
+24: Estamos Juntos (2011)
+25: Frankenstein Conquers the World (1965)
+26: PSYCHO-PASS: The Movie (2016)
+27: Rio Diablo (1993)
+28: Lost in a Harem (1944)
+29: A Year in Burgundy (2013)
+30: It Runs in the Family (My Summer Story) (1994)
+31: Scavenger Hunt (1979)
+32: Just Write (1997)
+33: Beltracchi - The Art of the Forgery (2014)
+34: Far Out Man (1990)
+35: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+36: Tr?mulo (2015)
+37: UFO - Distruggete base Luna! (1971)
+38: Loser Takes All! (Qui perd gagne !) (2003)
+39: Punk Vacation (1987)
+40: Cari fottutissimi amici (1994)
+41: Spine Tingler!  The William Castle Story (2007)
+42: Ali Baba Bunny (1957)
+43: Duplicate (1998)
+44: Farmageddon (2011)
+45: Daisy Town (1971)
+46: Salam Neighbor (2015)
+47: Scooby-Doo! Frankencreepy (2014)
+48: "Passion of Ayn Rand
+49: Extreme Private Eros: Love Song 1974 (1974)
+50: Alien Tornado (2012)
+Benchmark execution time: 644658ms

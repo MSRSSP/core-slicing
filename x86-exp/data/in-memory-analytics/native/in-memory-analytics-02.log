@@ -1,0 +1,64 @@
+Got 26024289 ratings from 270896 users on 45115 movies.
+Training: 15620330, validation: 5201747, test: 5202223
+RMSE (validation) = 0.8228952221639854 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.8222667402552002 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.8214854133328583 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.816640602752535 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.680341128910692 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.8163654668658705.
+The best model improves the baseline by 23.35%.
+Movies recommended for you:
+ 1: Pearl Jam: Immagine in Cornice - Live in Italy 2006 (2007)
+ 2: Hamoun (1990)
+ 3: The Marquis (2011)
+ 4: Female Vampire (Les avaleuses) (Erotic Kill) (1973)
+ 5: The Great American Girl Robbery (1979)
+ 6: Tintin and the Lake of Sharks (1972)
+ 7: The Immoral Mr. Teas (1959)
+ 8: Alien Tornado (2012)
+ 9: Sex Is Zero (2002)
+10: Heaven Is a Playground (1991)
+11: Monster High: Fright On! (2011)
+12: UFO - Distruggete base Luna! (1971)
+13: Duplicate (1998)
+14: Lavalantula (2015)
+15: Rio Diablo (1993)
+16: The Prodigies (2011)
+17: Mamitas (2011)
+18: Far Out Man (1990)
+19: More Brains! A Return to the Living Dead (2011)
+20: The Keepers (2017)
+21: "2013 Rock and Roll Hall of Fame Induction Ceremony
+22: Atharintiki Daaredi (2013)
+23: Night of the Day of the Dawn of the Son of the Bride of the Return of the Terror (1991)
+24: PSYCHO-PASS: The Movie (2016)
+25: Ali Baba Bunny (1957)
+26: Frankenstein Conquers the World (1965)
+27: Susie Q (1996)
+28: Zakochani (2000)
+29: Last Day of Summer (2009)
+30: Estamos Juntos (2011)
+31: 1 (2014)
+32: Lemonade Mouth (2011)
+33: Fantastic Lies (2016)
+34: "Mahabharata
+35: Daisy Town (1971)
+36: Extreme Private Eros: Love Song 1974 (1974)
+37: Company (2002)
+38: Manhattan Romance (2015)
+39: Spine Tingler!  The William Castle Story (2007)
+40: Emmanuelle 5 (1987)
+41: Here Without Me (Inja bedoone man) (2011)
+42: Provocateur (1998)
+43: "Rage
+44: Farmageddon (2011)
+45: Love Is Blind (2013)
+46: Hatchet III (2013)
+47: The Harmony Game (2011)
+48: Desierto (2016)
+49: The War at Home (1979)
+50: The Story of Asya Klyachina (1966)
+Benchmark execution time: 756090ms
