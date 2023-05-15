@@ -62,15 +62,6 @@ run: qemu payload-build
 	#docker run -v /root/slice:/root/slice -v /dev:/dev --privileged --cidfile cidfile.txt -w ${target}/slice-hss/bypass-uboot  -it ${dimage} bash
 	#-c "./qemu.sh build/slice-qemu-sd.img"
 
-riscv-gnu-toolchain:
-	git clone https://github.com/riscv/riscv-gnu-toolchain
-	git checkout 2022.01.17
-	${DOCKER_RUN} \
-	-w /slice/ ${dimage} sh -c "cd riscv-gnu-toolchain; ./configure --prefix=${target}/riscv-install -with-arch=rv64imafdc --with-abi=lp64d"
-riscv_install: riscv-gnu-toolchain
-	mkdir -p riscv-install
-	${DOCKER_RUN}  -w ${target} ${dimage}  bash -c "cd riscv-gnu-toolchain; make linux -j `nproc`"
-
 clean:
 	rm -r slice-hss/Default-qemu
 	find -type f -name "*.o" -delete

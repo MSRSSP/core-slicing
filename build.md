@@ -25,21 +25,7 @@ Our tutorials include pre-built binaries that are designed to work seamlessly wi
 
 ### Build RISC-V toolchain
 
-#### Option1: Install from source code
-
-We **do not** recommend installing a new RISC-V toolchain from source code as it
-can take several hours to complete. However, if you wish to proceed with this
-option, run the following command:
-
-```
-make riscv-gnu-toolchain
-```
-
-To use our tutorial, please put your riscv toolchain in
-`install/rv64` path
-
-
-#### Option2: Use our pre-built toolchain
+#### Option1: Use our pre-built toolchain
 
 Download and extract our pre-built RISC-V toolchain using the following command:
 
@@ -47,6 +33,16 @@ Download and extract our pre-built RISC-V toolchain using the following command:
 wget https://github.com/MSRSSP/slice-docker-env/releases/download/prebuilt/riscv-tools.tar.gz
 tar xvzf riscv-tools.tar.gz
 ```
+
+#### Option2: Install from source code
+
+We **do not** recommend installing a new RISC-V toolchain from source code as it
+can take several hours to complete. However, if you wish to proceed with this
+option, please refer to [RISCV-gnu-toolchain](https://github.com/riscv/riscv-gnu-toolchain):
+
+To use our tutorial, please put your riscv toolchain in
+`install/rv64` path
+
 
 ### Build Guest linux
 
@@ -79,7 +75,7 @@ Run the following command to create a Docker image with build dependencies:
 make qemu
 ```
 
-#### Option2: Use our pre-built qeny
+#### Option2: Use our pre-built qemu
 
 ```
 curl -L -O https://github.com/MSRSSP/slice-docker-env/releases/download/prebuilt/qemu-build.tar.gz
