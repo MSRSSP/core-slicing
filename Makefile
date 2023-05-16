@@ -31,12 +31,12 @@ linux-riscv-build/arch/riscv/boot/Image: linux-build-tmp/arch/riscv/boot/Image
 	cp linux-build-tmp/arch/riscv/boot/Image linux-riscv-build/arch/riscv/boot/Image
 
 linux-riscv-build2/arch/riscv/boot/Image: linux-build-tmp/arch/riscv/boot/Image
-	mkdir -p inux-riscv-build2/arch/riscv/boot/
+	mkdir -p linux-riscv-build2/arch/riscv/boot/
 	cp linux-build-tmp/arch/riscv/boot/Image linux-riscv-build2/arch/riscv/boot/Image
 
-linux-riscv-build: linux-riscv-build2/arch/riscv/boot/Image
+linux-riscv-build: linux-riscv-build/arch/riscv/boot/Image
 
-linux-riscv-build2: linux-riscv-build/arch/riscv/boot/Image
+linux-riscv-build2: linux-riscv-build2/arch/riscv/boot/Image
 
 linux-riscv-rebuild: linux-build-tmp linux-5.15-rc4
 	@$(call RUN,linux-5.15-rc4,,source /root/slice/install/env.sh && make O=../linux-build-tmp ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- CONFIG_INITRAMFS_SOURCE=/root/slice/rootfs.cpio -j${ncores})
