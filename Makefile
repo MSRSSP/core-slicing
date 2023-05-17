@@ -15,10 +15,8 @@ qemu/build:
 qemu: qemu/build
 
 linux-5.15-rc4:
-	wget https://github.com/torvalds/linux/archive/refs/tags/v5.15-rc4.zip
-	unzip v5.15-rc4.zip
-	cd linux-5.15-rc4
-	patch -s -p0 < ../0001-Add-microchip-specific-clock-and-devices.patch;
+	git clone https://github.com/torvalds/linux --branch v5.15-rc4 --depth 1 linux-5.15-rc4
+	cd linux-5.15-rc4 && git apply ../0001-Add-microchip-specific-clock-and-devices.patch
 linux-build-tmp: linux-5.15-rc4
 	mkdir -p linux-build-tmp
 	cp kernelconfig linux-build-tmp/.config
