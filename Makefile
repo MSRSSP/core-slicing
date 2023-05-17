@@ -4,7 +4,15 @@ RISCV=${target}/install/rv64
 DOCKER_RUN=docker run -v ${PWD}/:${target} -e RISCV=${RISCV} -e TOP=${target}
 
 RUN=${DOCKER_RUN} -w ${target}/$1 $2 ${dimage} bash -c "$3";
-ncores=$(expr $(nproc)/2)
+totalcores=$(shell nproc)
+ncores=$$(($(totalcores)/2))
+setup:
+	git submodule update --init --progress
+	cd slice-hss && git submodule update --init --recursive  --progress
+all: slice-ubuntu run
+install:
+	wget https://github.com/MSRSSP/slice-docker-env/releases/download/prebuilt/riscv-tools.tar.gz
+	tar xvzf riscv-tools.tar.gz
 slice-ubuntu:
 	docker build docker/ --tag ${dimage}
 qemu/build:
@@ -14,7 +22,7 @@ qemu/build:
 
 qemu: qemu/build
 
-linux-5.15-rc4:
+linux-5.15-rc4: install
 	git clone https://github.com/torvalds/linux --branch v5.15-rc4 --depth 1 linux-5.15-rc4
 	cd linux-5.15-rc4 && git apply ../0001-Add-microchip-specific-clock-and-devices.patch
 linux-build-tmp: linux-5.15-rc4
@@ -43,8 +51,7 @@ slice-hss/.config: slice-hss/boards/slice/slice_config_attest
 	cp $< $@
 
 slice-hss/Default-qemu/hss-envm-wrapper.bin: slice-hss/.config
-	@$(call RUN,slice-hss,,source /root/slice/install/env.sh; sh make-qemu.sh)
-	@$(call RUN,slice-hss,,source /root/slice/install/env.sh; sh make-qemu.sh)
+	@$(call RUN,slice-hss,,source /root/slice/install/env.sh; sh make-qemu.sh; sh make-qemu.sh)
 	#${DOCKER_RUN}  -w ${target}/slice-hss  ${dimage} bash -c  "source /root/slice/install/env.sh; sh make-qemu.sh"
 
 slice-hss/bypass-uboot/build/slice-qemu-sd.img: slice-hss/Default-qemu/hss-envm-wrapper.bin
@@ -52,7 +59,7 @@ slice-hss/bypass-uboot/build/slice-qemu-sd.img: slice-hss/Default-qemu/hss-envm-
 	#${DOCKER_RUN}  -v /dev:/dev --privileged -w ${target}/slice-hss/bypass-uboot   ${dimage} \
 	#bash -c  "make -C dts; make qemu"
 
-payload-build: slice-hss/bypass-uboot/build/slice-qemu-sd.img
+payload-build: linux-riscv-build linux-riscv-build2 slice-hss/bypass-uboot/build/slice-qemu-sd.img
 	touch payload-build
 run: qemu payload-build
 	rm -rf cidfile.txt
