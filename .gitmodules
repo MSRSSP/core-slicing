@@ -1,10 +1,11 @@
 [submodule "qemu"]
 	path = qemu
-	url = git@github.com:MSRSSP/qemu.git
+	url = https://github.com/MSRSSP/qemu-slice.git
+	branch = slice
 [submodule "slice-hss"]
 	path = slice-hss
-	url = git@github.com:MSRSSP/slice-hss.git
-	branch = slice-rebase
+	url = https://github.com/MSRSSP/hss-slice.git
+	branch = osdi-artifact
 [submodule "sliceloade-x64"]
 	path = sliceloade-x64
 	url = git@github.com:MSRSSP/sliceloader-x64.git
