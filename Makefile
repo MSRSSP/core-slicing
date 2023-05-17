@@ -44,6 +44,7 @@ slice-hss/.config: slice-hss/boards/slice/slice_config_attest
 
 slice-hss/Default-qemu/hss-envm-wrapper.bin: slice-hss/.config
 	@$(call RUN,slice-hss,,source /root/slice/install/env.sh; sh make-qemu.sh)
+	@$(call RUN,slice-hss,,source /root/slice/install/env.sh; sh make-qemu.sh)
 	#${DOCKER_RUN}  -w ${target}/slice-hss  ${dimage} bash -c  "source /root/slice/install/env.sh; sh make-qemu.sh"
 
 slice-hss/bypass-uboot/build/slice-qemu-sd.img: slice-hss/Default-qemu/hss-envm-wrapper.bin
