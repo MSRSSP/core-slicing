@@ -1,18 +1,36 @@
-## Build from source code
-
-### Download
+# Build from source code
 
 Clone the slice-docker-env repository and navigate to the osdi-artifact branch:
 
 ```
-git clone git@github.com:MSRSSP/slice-docker-env.git
+git clone https://github.com/MSRSSP/slice-docker-env.git
 cd slice-docker-env
 git checkout osdi-artifact
-git submodule update --init --progress
+git submodule update --init --progress qemu slice-hss
 cd slice-hss
 git submodule update --init --recursive  --progress
 cd ../
 ```
+
+## (Option1) Quick build
+
+In most cases, the quik build is enough and you do not need to use [Option 2](#option-2-build).
+
+Run the following command to build all at once.
+```
+make all
+```
+
+After compilation completes, it would automatically launch the slicevisor.
+
+
+
+### Test slice functions
+
+See :point_right: [Step2](quick-start.md#)
+
+## (Option 2) Build
+Build qemu, linux, and sliceloader separately
 
 ### Create a Docker image with build dependencies
 Run the following command to create a Docker image with build dependencies:
@@ -103,7 +121,4 @@ Run the following command to boot Slice-0 and two pre-configured guest slices.
 make run
 ```
 
-### Other steps
-
-See [quick-start](quick-start.md)
 

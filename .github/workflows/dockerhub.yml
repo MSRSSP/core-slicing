@@ -3,36 +3,47 @@ name: Build Docker Images
 on:
   push:
     branches:
-      - master
+      - pub-repo
 
 jobs:
-  dockerhub:
+  quick-build:
     runs-on: ubuntu-latest
-
     steps:
       - name: checkout sources
         uses: actions/checkout@v2
 
-      - name: checkout submodules
+      - name: quick build
         shell: bash
         run: |
-          git -c url."https://${{ secrets.TOKEN }}@github.com".insteadOf="https://github.com" submodule update --init
-          git -c url."https://${{ secrets.TOKEN }}@github.com".insteadOf="https://github.com" submodule update --init --recursive slice-boot
+          make setup
+          make all
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout sources
+        uses: actions/checkout@v2
 
-      - name: Login to Docker Hub
-        uses: docker/login-action@v1.10.0
-        with:
-          username: ziqiao
-          password: 2a898dad-76a4-4013-bf85-538e94573d27
-
-      - name: Build and push
-        uses: docker/build-push-action@v2
-        with:
-          push: true
-          context: .
-          secrets: |
-            GIT_AUTH_TOKEN=${{ secrets.TOKEN}}
-          tags: ziqiao/slice-docker:slice
+      - name: quick build
+        shell: bash
+        run: |
+          sudo apt-get update && sudo apt-get install -y --no-install-recommends \
+            make perl python3 gcc libc-dev pkgconf libglib2.0-dev \
+            zlib1g-dev build-essential libpixman-1-dev \
+            git patch bash device-tree-compiler bison flex \
+            gawk expat telnet \
+            libyaml-dev libelf-dev gdisk parted \
+            libssl-dev bc sudo ninja-build \
+            autoconf automake autotools-dev curl python3 \
+            libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex \
+            gperf libtool patchutils bc zlib1g-dev libexpat-dev \
+            libglib2.0-dev libfdt-dev libpixman-1-dev \
+            libpng-dev libslirp-dev libpulse-dev
+          make setup
+          USE_DOCKER=false make slice-ubuntu
+          USE_DOCKER=false make install
+          USE_DOCKER=false make qemu
+          USE_DOCKER=false make linux-riscv-build
+          USE_DOCKER=false make linux-riscv-build2
+          USE_DOCKER=false make payload-build
+          USE_DOCKER=false make run
