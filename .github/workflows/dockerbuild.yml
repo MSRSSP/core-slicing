@@ -3,7 +3,7 @@ name: Build Docker Images
 on:
   push:
     branches:
-      - pub-repo
+      - osdi-artifact
 
 jobs:
   quick-start:
