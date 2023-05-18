@@ -8,14 +8,20 @@ cd slice-docker-env
 make setup
 ```
 
-## (Option1) Quick build
+## Quick build
 
-Use quick build so that you do not need to compile different repositories step by step [Option 2](#option-2-build).
+Use quick build so that you do not need to compile different repositories step by step [Step-by-step build](#build).
 
-Run the following command to build all at once.
-```
-make all
-```
+* Option1: [~5 min] Run the following command to build slicevisor and sliceloader with prebuilt qemu + guest linux.
+  ```
+  make quick-build
+  ```
+
+* Option2: [~15min] Run the following command to build qemu, linux, slicevisor, and sliceloder
+  ```
+  make clean
+  make all
+  ```
 
 After compilation completes, start the slicevisor with the default guest slice config
 ```
@@ -26,7 +32,10 @@ make run
 
 See :point_right: [Step2](quick-start.md#)
 
-## (Option 2) Build
+## Build
+
+> NOTE: this section explains the build process in `make quick-build` and `make all`. You do not need to read them.
+
 Build qemu, linux, and sliceloader separately
 
 ### Create a Docker image with build dependencies
@@ -45,11 +54,12 @@ Our tutorials include pre-built binaries that are designed to work seamlessly wi
 Download and extract our pre-built RISC-V toolchain using the following command:
 
 ```
-wget https://github.com/MSRSSP/slice-docker-env/releases/download/prebuilt/riscv-tools.tar.gz
-tar xvzf riscv-tools.tar.gz
+make riscv-install
 ```
 
 #### Option2: Install from source code
+
+> NOTE: this step takes over hours. It does not worth to compile it.
 
 We **do not** recommend installing a new RISC-V toolchain from source code as it
 can take several hours to complete. However, if you wish to proceed with this
@@ -59,42 +69,39 @@ To use our tutorial, please put your riscv toolchain in
 `install/rv64` path
 
 
-### Build Guest linux
+### Build Guest Linux
 
-#### Option1: Build from Linux source code
+#### Option1: Use our pre-built images
+
+```
+make guest-linux-prebuilt
+```
+
+
+#### Option2: Build from Linux source code
 
 Run the following commands to download and build Linux:
 
 ```
+make linux-5.15-rc4
 make linux-riscv-build
 make linux-riscv-build2
 ```
 
-We have two guest Images for two guest slices. Here we lazily use one build for two.
-
-#### Option2: Use our pre-built images
-
-```
-wget https://github.com/MSRSSP/slice-docker-env/releases/download/prebuilt/linux-riscv-build.tar.gz
-tar xvzf linux-riscv-build.tar.gz
-cp -r linux-riscv-build linux-riscv-build2
-```
+We have two guest Images for two guest slices. Here we lazily use one build for two. Feel free to build two different images if you want to run two different guest kernels
 
 ### Build our modified qemu
-
-#### Option1: Install from our modified qemu source code
-
-Run the following command to create a Docker image with build dependencies:
-
-```
-make qemu
-```
 
 #### Option2: Use our pre-built qemu
 
 ```
-curl -L -O https://github.com/MSRSSP/slice-docker-env/releases/download/prebuilt/qemu-build.tar.gz
-tar xvzf qemu-build.tar.gz
+make qemu-prebuilt
+```
+
+#### Option1: Install from our modified qemu source code
+
+```
+make qemu
 ```
 
 ## Build Slice firmware and create payload

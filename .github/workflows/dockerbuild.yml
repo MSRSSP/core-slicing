@@ -6,19 +6,29 @@ on:
       - pub-repo
 
 jobs:
-  quick-build:
+  quick-start:
     runs-on: ubuntu-latest
     steps:
       - name: checkout sources
         uses: actions/checkout@v2
 
-      - name: quick build
+      - name: build docker
+        shell: bash
+        run: make slice-ubuntu && docker build demo --tag slice-demo
+
+  build-all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout sources
+        uses: actions/checkout@v2
+
+      - name: build all except for the riscv toolchain
         shell: bash
         run: |
           make setup
           make all
 
-  build:
+  quick-build-option1:
     runs-on: ubuntu-latest
     steps:
       - name: checkout sources
@@ -29,16 +39,8 @@ jobs:
         run: |
           make setup
           make slice-ubuntu
-      - name: install riscv toolchain
-        run: make install
-      - name: build sliceloader
+
+      - name: build sliceloader with prebuilt guest linux + qemu + riscv toolchain
         shell: bash
-        run: make slice-hss/Default-qemu/hss-envm-wrapper.bin
-      - name: build guest linux
-        shell: bash
-        run: make linux-riscv-build && make linux-riscv-build2
-      - name: build sd image
-        shell: bash
-        run: |
-          make payload-build
-          make qemu
+        run: make quick-build
+

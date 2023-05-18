@@ -12,27 +12,37 @@ setup:
 	git submodule update --init --progress slice-hss qemu
 	cd slice-hss && git submodule update --init --recursive  --progress
 
-all: slice-ubuntu payload-build qemu
+all: slice-ubuntu linux-5.15-rc4 payload-build qemu
+
+quick-build: slice-ubuntu qemu-prebuilt guest-linux-prebuilt payload-build
+
+riscv-install: install
 
 install:
 	wget https://github.com/MSRSSP/slice-docker-env/releases/download/prebuilt/riscv-tools.tar.gz
 	tar xvzf riscv-tools.tar.gz
 	chmod +x install/rv64/bin/*
+
 slice-ubuntu:
 	docker build docker/ --tag ${dimage}
 qemu/build:
 	@$(call RUN,qemu,-e GIT_SSL_NO_VERIFY=true,git config --global --add safe.directory '*' && scripts/git-submodule.sh update  ui/keycodemapdb meson tests/fp/berkeley-testfloat-3 tests/fp/berkeley-softfloat-3 dtc capstone slirp &&./configure --with-git-submodules=ignore --target-list=riscv64-softmmu &&make -j `nproc`)
+
+qemu-prebuilt:
+	curl -L -O https://github.com/MSRSSP/slice-docker-env/releases/download/prebuilt/qemu-build.tar.gz
+	tar xvzf qemu-build.tar.gz
+	touch qemu/build
 
 qemu: qemu/build
 
 linux-5.15-rc4: install
 	git clone https://github.com/torvalds/linux --branch v5.15-rc4 --depth 1 linux-5.15-rc4
 	cd linux-5.15-rc4 && git apply ../0001-Add-microchip-specific-clock-and-devices.patch
-linux-build-tmp: linux-5.15-rc4
+linux-build-tmp/.config:
 	mkdir -p linux-build-tmp
 	cp kernelconfig linux-build-tmp/.config
 
-linux-build-tmp/arch/riscv/boot/Image: linux-build-tmp
+linux-build-tmp/arch/riscv/boot/Image: linux-build-tmp/.config
 	@$(call RUN,linux-5.15-rc4,,source ../install/env.sh && which riscv64-unknown-linux-gnu-gcc && make O=../linux-build-tmp ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- CONFIG_INITRAMFS_SOURCE=../rootfs.cpio -j${ncores})
 
 linux-riscv-build/arch/riscv/boot/Image: linux-build-tmp/arch/riscv/boot/Image
@@ -49,6 +59,19 @@ linux-riscv-build2: linux-riscv-build2/arch/riscv/boot/Image
 
 linux-riscv-rebuild: linux-build-tmp linux-5.15-rc4
 	@$(call RUN,linux-5.15-rc4,,source ../install/env.sh && make O=../linux-build-tmp ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- CONFIG_INITRAMFS_SOURCE=../rootfs.cpio -j${ncores})
+
+guest-linux-prebuilt:
+	wget https://github.com/MSRSSP/slice-docker-env/releases/download/prebuilt/linux-riscv-build.tar.gz
+	tar xvzf linux-riscv-build.tar.gz
+	mkdir -p linux-build-tmp
+	mkdir -p linux-riscv-build2
+	cp kernelconfig linux-build-tmp/.config
+	cp -r linux-riscv-build/* linux-build-tmp/
+	cp -r linux-riscv-build/* linux-riscv-build2/
+	touch linux-build-tmp/arch/riscv/boot/Image
+	touch linux-riscv-build2/arch/riscv/boot/Image
+	touch linux-riscv-build/arch/riscv/boot/Image
+
 
 slice-hss/.config: slice-hss/boards/slice/slice_config_attest
 	cp $< $@
@@ -67,4 +90,5 @@ run: payload-build qemu
 
 clean:
 	rm -r slice-hss/Default-qemu
+	rm -r linux-build-tmp
 	find -type f -name "*.o" -delete
