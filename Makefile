@@ -12,7 +12,7 @@ setup:
 	git submodule update --init --progress slice-hss qemu
 	cd slice-hss && git submodule update --init --recursive  --progress
 
-all: slice-ubuntu run
+all: slice-ubuntu payload-build qemu
 
 install:
 	wget https://github.com/MSRSSP/slice-docker-env/releases/download/prebuilt/riscv-tools.tar.gz

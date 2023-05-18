@@ -17,8 +17,10 @@ Run the following command to build all at once.
 make all
 ```
 
-After compilation completes, it would automatically launch the slicevisor.
-
+After compilation completes, start the slicevisor with the default guest slice config
+```
+make run
+```
 
 ### Test slice functions
 
@@ -103,7 +105,7 @@ Run the following command to build Slice firmware and create a payload:
 make payload-build
 ```
 
-Note: If the build fails, retry the command.
+> NOTE: [slice-hss/bypass-uboot/conf/slice/config.yaml](slice-hss/bypass-uboot/conf/slice/config.yaml) defines the default guest slice configuration. Update it properly if you want to use different config when at the begining.
 
 ## Run
 We will use a RISC-V board emulated by QEMU with 4 normal processors and 1 monitor processor. 
