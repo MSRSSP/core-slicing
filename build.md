@@ -3,18 +3,14 @@
 Clone the slice-docker-env repository and navigate to the osdi-artifact branch:
 
 ```
-git clone https://github.com/MSRSSP/slice-docker-env.git
+git clone https://github.com/MSRSSP/slice-docker-env.git --branch osdi-artifact
 cd slice-docker-env
-git checkout osdi-artifact
-git submodule update --init --progress qemu slice-hss
-cd slice-hss
-git submodule update --init --recursive  --progress
-cd ../
+make setup
 ```
 
 ## (Option1) Quick build
 
-In most cases, the quik build is enough and you do not need to use [Option 2](#option-2-build).
+Use quick build so that you do not need to compile different repositories step by step [Option 2](#option-2-build).
 
 Run the following command to build all at once.
 ```
@@ -22,7 +18,6 @@ make all
 ```
 
 After compilation completes, it would automatically launch the slicevisor.
-
 
 
 ### Test slice functions

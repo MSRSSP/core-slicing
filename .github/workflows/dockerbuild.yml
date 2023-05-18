@@ -1,0 +1,44 @@
+name: Build Docker Images
+
+on:
+  push:
+    branches:
+      - pub-repo
+
+jobs:
+  quick-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout sources
+        uses: actions/checkout@v2
+
+      - name: quick build
+        shell: bash
+        run: |
+          make setup
+          make all
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout sources
+        uses: actions/checkout@v2
+
+      - name: setup
+        shell: bash
+        run: |
+          make setup
+          make slice-ubuntu
+      - name: install riscv toolchain
+        run: make install
+      - name: build sliceloader
+        shell: bash
+        run: make slice-hss/Default-qemu/hss-envm-wrapper.bin
+      - name: build guest linux
+        shell: bash
+        run: make linux-riscv-build && make linux-riscv-build2
+      - name: build sd image
+        shell: bash
+        run: |
+          make payload-build
+          make qemu
