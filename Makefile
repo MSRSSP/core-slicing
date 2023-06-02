@@ -1,9 +1,10 @@
-dimage=slice-ubuntu
+BASEIMAGE=slice-ubuntu
+DEMOIMAGE=slice-demo
 target=/root/slice
 RISCV=${target}/install/rv64
 DOCKER_RUN=docker run -v ${PWD}/:${target} -e RISCV=${RISCV} -e TOP=${target}
 USE_DOCKER?=true
-RUN=if ${USE_DOCKER}; then ${DOCKER_RUN} -w ${target}/$1 $2 ${dimage} bash -c "$3"; else cd ${PWD}/$1 && export RISCV=${RISCV} && export TOP=${target} && export GIT_SSL_NO_VERIFY=true && bash -c "$3";fi
+RUN=if ${USE_DOCKER}; then ${DOCKER_RUN} -w ${target}/$1 $2 ${BASEIMAGE} bash -c "$3"; else cd ${PWD}/$1 && export RISCV=${RISCV} && export TOP=${target} && export GIT_SSL_NO_VERIFY=true && bash -c "$3";fi
 #RUN=cd ${target}/$1 && export RISCV=${RISCV} && export TOP=${target} && $3
 totalcores=$(shell nproc)
 #ncores=$$(($(totalcores)*3/4))
@@ -19,17 +20,19 @@ quick-build: slice-ubuntu qemu-prebuilt guest-linux-prebuilt payload-build
 riscv-install: install
 
 install:
-	wget https://github.com/MSRSSP/slice-docker-env/releases/download/prebuilt/riscv-tools.tar.gz
+	wget https://github.com/MSRSSP/core-slicing/releases/download/prebuilt/riscv-tools.tar.gz
 	tar xvzf riscv-tools.tar.gz
 	chmod +x install/rv64/bin/*
 
-slice-ubuntu:
-	docker build docker/ --tag ${dimage}
+slice-ubuntu-container:
+	docker build slice-ubuntu/ --tag ${BASEIMAGE}
+slice-demo-container: slice-ubuntu-container
+	docker build slice-demo/ --tag ${DEMOIMAGE}
 qemu/build:
 	@$(call RUN,qemu,-e GIT_SSL_NO_VERIFY=true,git config --global --add safe.directory '*' && scripts/git-submodule.sh update  ui/keycodemapdb meson tests/fp/berkeley-testfloat-3 tests/fp/berkeley-softfloat-3 dtc capstone slirp &&./configure --with-git-submodules=ignore --target-list=riscv64-softmmu &&make -j `nproc`)
 
 qemu-prebuilt:
-	curl -L -O https://github.com/MSRSSP/slice-docker-env/releases/download/prebuilt/qemu-build.tar.gz
+	curl -L -O https://github.com/MSRSSP/core-slicing/releases/download/prebuilt/qemu-build.tar.gz
 	tar xvzf qemu-build.tar.gz
 	touch qemu/build
 
@@ -61,7 +64,7 @@ linux-riscv-rebuild: linux-build-tmp linux-5.15-rc4
 	@$(call RUN,linux-5.15-rc4,,source ../install/env.sh && make O=../linux-build-tmp ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- CONFIG_INITRAMFS_SOURCE=../rootfs.cpio -j${ncores})
 
 guest-linux-prebuilt:
-	wget https://github.com/MSRSSP/slice-docker-env/releases/download/prebuilt/linux-riscv-build.tar.gz
+	wget https://github.com/MSRSSP/core-slicing/releases/download/prebuilt/linux-riscv-build.tar.gz
 	tar xvzf linux-riscv-build.tar.gz
 	mkdir -p linux-build-tmp
 	mkdir -p linux-riscv-build2

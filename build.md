@@ -1,10 +1,10 @@
 # Build from source code
 
-Clone the slice-docker-env repository and navigate to the osdi-artifact branch:
+Clone the core-slicing repository and navigate to the osdi-artifact branch:
 
 ```
-git clone https://github.com/MSRSSP/slice-docker-env.git --branch osdi-artifact
-cd slice-docker-env
+git clone https://github.com/MSRSSP/core-slicing.git --branch osdi-artifact
+cd core-slicing
 make setup
 ```
 

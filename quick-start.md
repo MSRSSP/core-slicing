@@ -3,8 +3,7 @@
 ### Download prebuilts into a docker image
 
 ```
-cd demo
-docker build ./ --tag slice-demo
+make slice-demo-container
 ```
 
 ### Step 1: Boot slice-0
