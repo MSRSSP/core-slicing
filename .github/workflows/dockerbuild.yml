@@ -14,7 +14,7 @@ jobs:
 
       - name: build docker
         shell: bash
-        run: make slice-ubuntu && docker build demo --tag slice-demo
+        run: make slice-demo-container
 
   build-all:
     runs-on: ubuntu-latest
@@ -34,13 +34,9 @@ jobs:
       - name: checkout sources
         uses: actions/checkout@v2
 
-      - name: setup
+      - name: build sliceloader with prebuilt guest linux + qemu + riscv toolchain
         shell: bash
         run: |
           make setup
-          make slice-ubuntu
-
-      - name: build sliceloader with prebuilt guest linux + qemu + riscv toolchain
-        shell: bash
-        run: make quick-build
+          make quick-build
 
