@@ -1,6 +1,10 @@
 # Core slicing prototype
 This tutorial will walk you through building and executing two versions of our core slicing prototype: one with desired security properties in RISC-V, and another for performance evaluation in x86.
 
+## Reference
+
+For more background, see [*Core slicing: closing the gap between leaky confidential VMs and bare-metal cloud*](https://www.usenix.org/system/files/osdi23-zhou-ziqiao.pdf), OSDI 2023.
+
 ## RISC-V prototype
 
 ### :rocket: Quick start
