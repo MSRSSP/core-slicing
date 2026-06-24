@@ -5,6 +5,21 @@ This tutorial will walk you through building and executing two versions of our c
 
 For more background, see [*Core slicing: closing the gap between leaky confidential VMs and bare-metal cloud*](https://www.usenix.org/system/files/osdi23-zhou-ziqiao.pdf), OSDI 2023.
 
+To cite this paper, use the following BibTeX entry:
+
+```bibtex
+@inproceedings{zhou2023coreslicing,
+  author    = {Ziqiao Zhou and Yizhou Shan and Weidong Cui and Xinyang Ge and Marcus Peinado and Andrew Baumann},
+  title     = {Core slicing: closing the gap between leaky confidential {VMs} and bare-metal cloud},
+  booktitle = {17th USENIX Symposium on Operating Systems Design and Implementation (OSDI 23)},
+  year      = {2023},
+  pages     = {247--267},
+  address   = {Boston, MA, USA},
+  publisher = {USENIX Association},
+  url       = {https://www.usenix.org/system/files/osdi23-zhou-ziqiao.pdf},
+}
+```
+
 ## RISC-V prototype
 
 ### :rocket: Quick start
